@@ -1,0 +1,2 @@
+/usr/bin/arm-none-eabi-ar qc libsh2.a CMakeFiles/sh2.dir/src/sh2.c.o CMakeFiles/sh2.dir/src/shtp.c.o CMakeFiles/sh2.dir/src/sh2_util.c.o CMakeFiles/sh2.dir/src/sh2_SensorValue.c.o
+/usr/bin/arm-none-eabi-ranlib libsh2.a
