@@ -1,0 +1,3 @@
+[submodule "BNO08x_Pico_Library"]
+	path = BNO08x_Pico_Library
+	url = https://github.com/EIGSEP/BNO08x_Pico_Library.git

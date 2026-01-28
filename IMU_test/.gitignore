@@ -1,0 +1,22 @@
+# build artifacts
+build/
+**/build/
+
+# Pico build outputs
+*.uf2
+*.elf
+*.bin
+*.hex
+*.map
+*.dis
+
+# Pico SDK (do not commit)
+pico-sdk/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS junk
+.DS_Store
+

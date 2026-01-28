@@ -1,7 +1,0 @@
-/home/an0mie/Projects/IMU_test/pico-bno-demo/build/_deps/picotool/picotool
-/home/an0mie/Projects/IMU_test/pico-bno-demo/build/_deps/picotool/picotoolTargets.cmake
-/home/an0mie/Projects/IMU_test/pico-bno-demo/build/_deps/picotool/picotoolTargets-release.cmake
-/home/an0mie/Projects/IMU_test/pico-bno-demo/build/_deps/picotool/picotoolConfig.cmake
-/home/an0mie/Projects/IMU_test/pico-bno-demo/build/_deps/picotool/picotoolConfigVersion.cmake
-/home/an0mie/Projects/IMU_test/pico-bno-demo/build/_deps/picotool/enc_bootloader.elf
-/home/an0mie/Projects/IMU_test/pico-bno-demo/build/_deps/picotool/enc_bootloader_mbedtls.elf
