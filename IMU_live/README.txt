@@ -18,11 +18,11 @@ Repository Layout
 
 The repository is assumed to be cloned as:
 
-    IMU_test/
+    IMU_live/
 
 Repository contents:
 
-    IMU_test/
+    IMU_live/
     ├── pico-bno-demo/
     │   ├── CMakeLists.txt
     │   ├── src/
@@ -68,7 +68,7 @@ Building the Firmware
 
 From the repository root:
 
-    cd IMU_test/pico-bno-demo
+    cd IMU_live/pico-bno-demo
 
 Create the build directory (one time):
 
