@@ -6,7 +6,7 @@ from collections import deque
 
 import matplotlib.pyplot as plt
 
-PORT = "/dev/ttyACM0"
+PORT = "/dev/ttyACM1"
 BAUD = 115200
 
 PRINT_HZ = 24          # plot update rate
