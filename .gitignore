@@ -1,3 +1,14 @@
-imu_test/imuV2/logs/
-imu_test/imuV1/logs/
-imu_test/imuV2/logs/
+**/build/
+**/pico-sdk/
+**/BNO08x_Pico_Library/
+**/_deps/
+logs/
+*.o
+*.d
+*.a
+*.elf
+*.bin
+*.uf2
+*.hex
+*.map
+*.dis

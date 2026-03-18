@@ -1,3 +1,0 @@
-/home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build/_deps/picotool-subbuild/CMakeFiles/picotool-populate.dir
-/home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build/_deps/picotool-subbuild/CMakeFiles/edit_cache.dir
-/home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build/_deps/picotool-subbuild/CMakeFiles/rebuild_cache.dir
