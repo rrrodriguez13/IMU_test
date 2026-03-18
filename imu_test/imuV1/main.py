@@ -5,9 +5,9 @@ from machine import UART, Pin
 import time
 import struct
 
-# -------- UART CONFIG (edit pins to match your wiring) --------
+# UART CONFIG
 # Example: UART1 TX=GP4, RX=GP5
-uart = UART(1, baudrate=115200, tx=Pin(4), rx=Pin(5))
+uart = UART(0, baudrate=115200, tx=Pin(4), rx=Pin(5))
 
 def checksum_8bit(data: bytes) -> int:
     return sum(data) & 0xFF
