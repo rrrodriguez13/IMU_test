@@ -1,4 +1,4 @@
-# Install script for directory: /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2
+# Install script for directory: /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

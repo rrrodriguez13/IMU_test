@@ -1,4 +1,4 @@
-// Padded and checksummed version of: /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build/pico-sdk/src/rp2350/boot_stage2/bs2_default.bin
+// Padded and checksummed version of: /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build/pico-sdk/src/rp2350/boot_stage2/bs2_default.bin
 
 .cpu cortex-m0plus
 .thumb

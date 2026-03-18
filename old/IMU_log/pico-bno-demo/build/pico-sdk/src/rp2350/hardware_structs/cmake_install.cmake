@@ -1,4 +1,4 @@
-# Install script for directory: /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/pico-sdk/src/rp2350/hardware_structs
+# Install script for directory: /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/pico-sdk/src/rp2350/hardware_structs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

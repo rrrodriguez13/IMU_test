@@ -4,6 +4,6 @@
 
 method=source_dir
 command=
-source_dir=/home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/pico-sdk/tools/pioasm
+source_dir=/home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/pico-sdk/tools/pioasm
 work_dir=
 

@@ -3,7 +3,7 @@ set(CMAKE_HOST_SYSTEM_NAME "Linux")
 set(CMAKE_HOST_SYSTEM_VERSION "6.14.0-37-generic")
 set(CMAKE_HOST_SYSTEM_PROCESSOR "x86_64")
 
-include("/home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/pico-sdk/cmake/preload/toolchains/pico_arm_cortex_m33_gcc.cmake")
+include("/home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/pico-sdk/cmake/preload/toolchains/pico_arm_cortex_m33_gcc.cmake")
 
 set(CMAKE_SYSTEM "PICO")
 set(CMAKE_SYSTEM_NAME "PICO")

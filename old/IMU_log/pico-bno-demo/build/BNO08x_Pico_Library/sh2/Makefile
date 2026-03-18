@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo
+CMAKE_SOURCE_DIR = /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build
+CMAKE_BINARY_DIR = /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build/CMakeFiles /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build/BNO08x_Pico_Library/sh2//CMakeFiles/progress.marks
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BNO08x_Pico_Library/sh2/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build/CMakeFiles 0
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build/CMakeFiles /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build/BNO08x_Pico_Library/sh2//CMakeFiles/progress.marks
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BNO08x_Pico_Library/sh2/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BNO08x_Pico_Library/sh2/clean
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BNO08x_Pico_Library/sh2/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BNO08x_Pico_Library/sh2/preinstall
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BNO08x_Pico_Library/sh2/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BNO08x_Pico_Library/sh2/preinstall
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BNO08x_Pico_Library/sh2/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/rule:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/rule
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/rule
 .PHONY : BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ sh2: BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/rule
 
 # fast build rule for target.
 sh2/fast:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/build.make BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/build
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/build.make BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/build
 .PHONY : sh2/fast
 
 src/sh2.o: src/sh2.c.o
@@ -135,7 +135,7 @@ src/sh2.o: src/sh2.c.o
 
 # target to build an object file
 src/sh2.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/build.make BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/build.make BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2.c.o
 .PHONY : src/sh2.c.o
 
 src/sh2.i: src/sh2.c.i
@@ -143,7 +143,7 @@ src/sh2.i: src/sh2.c.i
 
 # target to preprocess a source file
 src/sh2.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/build.make BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/build.make BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2.c.i
 .PHONY : src/sh2.c.i
 
 src/sh2.s: src/sh2.c.s
@@ -151,7 +151,7 @@ src/sh2.s: src/sh2.c.s
 
 # target to generate assembly for a file
 src/sh2.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/build.make BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/build.make BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2.c.s
 .PHONY : src/sh2.c.s
 
 src/sh2_SensorValue.o: src/sh2_SensorValue.c.o
@@ -159,7 +159,7 @@ src/sh2_SensorValue.o: src/sh2_SensorValue.c.o
 
 # target to build an object file
 src/sh2_SensorValue.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/build.make BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_SensorValue.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/build.make BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_SensorValue.c.o
 .PHONY : src/sh2_SensorValue.c.o
 
 src/sh2_SensorValue.i: src/sh2_SensorValue.c.i
@@ -167,7 +167,7 @@ src/sh2_SensorValue.i: src/sh2_SensorValue.c.i
 
 # target to preprocess a source file
 src/sh2_SensorValue.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/build.make BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_SensorValue.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/build.make BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_SensorValue.c.i
 .PHONY : src/sh2_SensorValue.c.i
 
 src/sh2_SensorValue.s: src/sh2_SensorValue.c.s
@@ -175,7 +175,7 @@ src/sh2_SensorValue.s: src/sh2_SensorValue.c.s
 
 # target to generate assembly for a file
 src/sh2_SensorValue.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/build.make BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_SensorValue.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/build.make BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_SensorValue.c.s
 .PHONY : src/sh2_SensorValue.c.s
 
 src/sh2_util.o: src/sh2_util.c.o
@@ -183,7 +183,7 @@ src/sh2_util.o: src/sh2_util.c.o
 
 # target to build an object file
 src/sh2_util.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/build.make BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_util.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/build.make BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_util.c.o
 .PHONY : src/sh2_util.c.o
 
 src/sh2_util.i: src/sh2_util.c.i
@@ -191,7 +191,7 @@ src/sh2_util.i: src/sh2_util.c.i
 
 # target to preprocess a source file
 src/sh2_util.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/build.make BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_util.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/build.make BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_util.c.i
 .PHONY : src/sh2_util.c.i
 
 src/sh2_util.s: src/sh2_util.c.s
@@ -199,7 +199,7 @@ src/sh2_util.s: src/sh2_util.c.s
 
 # target to generate assembly for a file
 src/sh2_util.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/build.make BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_util.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/build.make BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_util.c.s
 .PHONY : src/sh2_util.c.s
 
 src/shtp.o: src/shtp.c.o
@@ -207,7 +207,7 @@ src/shtp.o: src/shtp.c.o
 
 # target to build an object file
 src/shtp.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/build.make BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/shtp.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/build.make BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/shtp.c.o
 .PHONY : src/shtp.c.o
 
 src/shtp.i: src/shtp.c.i
@@ -215,7 +215,7 @@ src/shtp.i: src/shtp.c.i
 
 # target to preprocess a source file
 src/shtp.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/build.make BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/shtp.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/build.make BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/shtp.c.i
 .PHONY : src/shtp.c.i
 
 src/shtp.s: src/shtp.c.s
@@ -223,7 +223,7 @@ src/shtp.s: src/shtp.c.s
 
 # target to generate assembly for a file
 src/shtp.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/build.make BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/shtp.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/build.make BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/shtp.c.s
 .PHONY : src/shtp.c.s
 
 # Help Target
@@ -258,6 +258,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

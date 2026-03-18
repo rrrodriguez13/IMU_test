@@ -1,4 +1,4 @@
-# Install script for directory: /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/pico-sdk
+# Install script for directory: /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/pico-sdk
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,16 +39,16 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build/pico-sdk/tools/cmake_install.cmake")
+  include("/home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build/pico-sdk/tools/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build/pico-sdk/src/cmake_install.cmake")
+  include("/home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build/pico-sdk/src/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build/pico-sdk/docs/cmake_install.cmake")
+  include("/home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build/pico-sdk/docs/cmake_install.cmake")
 endif()
 

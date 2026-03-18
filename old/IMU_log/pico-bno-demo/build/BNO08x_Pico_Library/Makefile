@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo
+CMAKE_SOURCE_DIR = /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build
+CMAKE_BINARY_DIR = /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build/CMakeFiles /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build/BNO08x_Pico_Library//CMakeFiles/progress.marks
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BNO08x_Pico_Library/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build/CMakeFiles 0
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build/CMakeFiles /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build/BNO08x_Pico_Library//CMakeFiles/progress.marks
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BNO08x_Pico_Library/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BNO08x_Pico_Library/clean
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BNO08x_Pico_Library/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BNO08x_Pico_Library/preinstall
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BNO08x_Pico_Library/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BNO08x_Pico_Library/preinstall
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BNO08x_Pico_Library/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/rule:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/rule
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/rule
 .PHONY : BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ BNO08x_Pico_Library: BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/rule
 
 # fast build rule for target.
 BNO08x_Pico_Library/fast:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build
 .PHONY : BNO08x_Pico_Library/fast
 
 __/pico-sdk/src/common/hardware_claim/claim.o: __/pico-sdk/src/common/hardware_claim/claim.c.o
@@ -135,7 +135,7 @@ __/pico-sdk/src/common/hardware_claim/claim.o: __/pico-sdk/src/common/hardware_c
 
 # target to build an object file
 __/pico-sdk/src/common/hardware_claim/claim.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/hardware_claim/claim.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/hardware_claim/claim.c.o
 .PHONY : __/pico-sdk/src/common/hardware_claim/claim.c.o
 
 __/pico-sdk/src/common/hardware_claim/claim.i: __/pico-sdk/src/common/hardware_claim/claim.c.i
@@ -143,7 +143,7 @@ __/pico-sdk/src/common/hardware_claim/claim.i: __/pico-sdk/src/common/hardware_c
 
 # target to preprocess a source file
 __/pico-sdk/src/common/hardware_claim/claim.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/hardware_claim/claim.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/hardware_claim/claim.c.i
 .PHONY : __/pico-sdk/src/common/hardware_claim/claim.c.i
 
 __/pico-sdk/src/common/hardware_claim/claim.s: __/pico-sdk/src/common/hardware_claim/claim.c.s
@@ -151,7 +151,7 @@ __/pico-sdk/src/common/hardware_claim/claim.s: __/pico-sdk/src/common/hardware_c
 
 # target to generate assembly for a file
 __/pico-sdk/src/common/hardware_claim/claim.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/hardware_claim/claim.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/hardware_claim/claim.c.s
 .PHONY : __/pico-sdk/src/common/hardware_claim/claim.c.s
 
 __/pico-sdk/src/common/pico_sync/critical_section.o: __/pico-sdk/src/common/pico_sync/critical_section.c.o
@@ -159,7 +159,7 @@ __/pico-sdk/src/common/pico_sync/critical_section.o: __/pico-sdk/src/common/pico
 
 # target to build an object file
 __/pico-sdk/src/common/pico_sync/critical_section.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_sync/critical_section.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_sync/critical_section.c.o
 .PHONY : __/pico-sdk/src/common/pico_sync/critical_section.c.o
 
 __/pico-sdk/src/common/pico_sync/critical_section.i: __/pico-sdk/src/common/pico_sync/critical_section.c.i
@@ -167,7 +167,7 @@ __/pico-sdk/src/common/pico_sync/critical_section.i: __/pico-sdk/src/common/pico
 
 # target to preprocess a source file
 __/pico-sdk/src/common/pico_sync/critical_section.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_sync/critical_section.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_sync/critical_section.c.i
 .PHONY : __/pico-sdk/src/common/pico_sync/critical_section.c.i
 
 __/pico-sdk/src/common/pico_sync/critical_section.s: __/pico-sdk/src/common/pico_sync/critical_section.c.s
@@ -175,7 +175,7 @@ __/pico-sdk/src/common/pico_sync/critical_section.s: __/pico-sdk/src/common/pico
 
 # target to generate assembly for a file
 __/pico-sdk/src/common/pico_sync/critical_section.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_sync/critical_section.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_sync/critical_section.c.s
 .PHONY : __/pico-sdk/src/common/pico_sync/critical_section.c.s
 
 __/pico-sdk/src/common/pico_sync/lock_core.o: __/pico-sdk/src/common/pico_sync/lock_core.c.o
@@ -183,7 +183,7 @@ __/pico-sdk/src/common/pico_sync/lock_core.o: __/pico-sdk/src/common/pico_sync/l
 
 # target to build an object file
 __/pico-sdk/src/common/pico_sync/lock_core.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_sync/lock_core.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_sync/lock_core.c.o
 .PHONY : __/pico-sdk/src/common/pico_sync/lock_core.c.o
 
 __/pico-sdk/src/common/pico_sync/lock_core.i: __/pico-sdk/src/common/pico_sync/lock_core.c.i
@@ -191,7 +191,7 @@ __/pico-sdk/src/common/pico_sync/lock_core.i: __/pico-sdk/src/common/pico_sync/l
 
 # target to preprocess a source file
 __/pico-sdk/src/common/pico_sync/lock_core.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_sync/lock_core.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_sync/lock_core.c.i
 .PHONY : __/pico-sdk/src/common/pico_sync/lock_core.c.i
 
 __/pico-sdk/src/common/pico_sync/lock_core.s: __/pico-sdk/src/common/pico_sync/lock_core.c.s
@@ -199,7 +199,7 @@ __/pico-sdk/src/common/pico_sync/lock_core.s: __/pico-sdk/src/common/pico_sync/l
 
 # target to generate assembly for a file
 __/pico-sdk/src/common/pico_sync/lock_core.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_sync/lock_core.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_sync/lock_core.c.s
 .PHONY : __/pico-sdk/src/common/pico_sync/lock_core.c.s
 
 __/pico-sdk/src/common/pico_sync/mutex.o: __/pico-sdk/src/common/pico_sync/mutex.c.o
@@ -207,7 +207,7 @@ __/pico-sdk/src/common/pico_sync/mutex.o: __/pico-sdk/src/common/pico_sync/mutex
 
 # target to build an object file
 __/pico-sdk/src/common/pico_sync/mutex.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_sync/mutex.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_sync/mutex.c.o
 .PHONY : __/pico-sdk/src/common/pico_sync/mutex.c.o
 
 __/pico-sdk/src/common/pico_sync/mutex.i: __/pico-sdk/src/common/pico_sync/mutex.c.i
@@ -215,7 +215,7 @@ __/pico-sdk/src/common/pico_sync/mutex.i: __/pico-sdk/src/common/pico_sync/mutex
 
 # target to preprocess a source file
 __/pico-sdk/src/common/pico_sync/mutex.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_sync/mutex.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_sync/mutex.c.i
 .PHONY : __/pico-sdk/src/common/pico_sync/mutex.c.i
 
 __/pico-sdk/src/common/pico_sync/mutex.s: __/pico-sdk/src/common/pico_sync/mutex.c.s
@@ -223,7 +223,7 @@ __/pico-sdk/src/common/pico_sync/mutex.s: __/pico-sdk/src/common/pico_sync/mutex
 
 # target to generate assembly for a file
 __/pico-sdk/src/common/pico_sync/mutex.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_sync/mutex.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_sync/mutex.c.s
 .PHONY : __/pico-sdk/src/common/pico_sync/mutex.c.s
 
 __/pico-sdk/src/common/pico_sync/sem.o: __/pico-sdk/src/common/pico_sync/sem.c.o
@@ -231,7 +231,7 @@ __/pico-sdk/src/common/pico_sync/sem.o: __/pico-sdk/src/common/pico_sync/sem.c.o
 
 # target to build an object file
 __/pico-sdk/src/common/pico_sync/sem.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_sync/sem.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_sync/sem.c.o
 .PHONY : __/pico-sdk/src/common/pico_sync/sem.c.o
 
 __/pico-sdk/src/common/pico_sync/sem.i: __/pico-sdk/src/common/pico_sync/sem.c.i
@@ -239,7 +239,7 @@ __/pico-sdk/src/common/pico_sync/sem.i: __/pico-sdk/src/common/pico_sync/sem.c.i
 
 # target to preprocess a source file
 __/pico-sdk/src/common/pico_sync/sem.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_sync/sem.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_sync/sem.c.i
 .PHONY : __/pico-sdk/src/common/pico_sync/sem.c.i
 
 __/pico-sdk/src/common/pico_sync/sem.s: __/pico-sdk/src/common/pico_sync/sem.c.s
@@ -247,7 +247,7 @@ __/pico-sdk/src/common/pico_sync/sem.s: __/pico-sdk/src/common/pico_sync/sem.c.s
 
 # target to generate assembly for a file
 __/pico-sdk/src/common/pico_sync/sem.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_sync/sem.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_sync/sem.c.s
 .PHONY : __/pico-sdk/src/common/pico_sync/sem.c.s
 
 __/pico-sdk/src/common/pico_time/time.o: __/pico-sdk/src/common/pico_time/time.c.o
@@ -255,7 +255,7 @@ __/pico-sdk/src/common/pico_time/time.o: __/pico-sdk/src/common/pico_time/time.c
 
 # target to build an object file
 __/pico-sdk/src/common/pico_time/time.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_time/time.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_time/time.c.o
 .PHONY : __/pico-sdk/src/common/pico_time/time.c.o
 
 __/pico-sdk/src/common/pico_time/time.i: __/pico-sdk/src/common/pico_time/time.c.i
@@ -263,7 +263,7 @@ __/pico-sdk/src/common/pico_time/time.i: __/pico-sdk/src/common/pico_time/time.c
 
 # target to preprocess a source file
 __/pico-sdk/src/common/pico_time/time.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_time/time.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_time/time.c.i
 .PHONY : __/pico-sdk/src/common/pico_time/time.c.i
 
 __/pico-sdk/src/common/pico_time/time.s: __/pico-sdk/src/common/pico_time/time.c.s
@@ -271,7 +271,7 @@ __/pico-sdk/src/common/pico_time/time.s: __/pico-sdk/src/common/pico_time/time.c
 
 # target to generate assembly for a file
 __/pico-sdk/src/common/pico_time/time.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_time/time.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_time/time.c.s
 .PHONY : __/pico-sdk/src/common/pico_time/time.c.s
 
 __/pico-sdk/src/common/pico_time/timeout_helper.o: __/pico-sdk/src/common/pico_time/timeout_helper.c.o
@@ -279,7 +279,7 @@ __/pico-sdk/src/common/pico_time/timeout_helper.o: __/pico-sdk/src/common/pico_t
 
 # target to build an object file
 __/pico-sdk/src/common/pico_time/timeout_helper.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_time/timeout_helper.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_time/timeout_helper.c.o
 .PHONY : __/pico-sdk/src/common/pico_time/timeout_helper.c.o
 
 __/pico-sdk/src/common/pico_time/timeout_helper.i: __/pico-sdk/src/common/pico_time/timeout_helper.c.i
@@ -287,7 +287,7 @@ __/pico-sdk/src/common/pico_time/timeout_helper.i: __/pico-sdk/src/common/pico_t
 
 # target to preprocess a source file
 __/pico-sdk/src/common/pico_time/timeout_helper.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_time/timeout_helper.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_time/timeout_helper.c.i
 .PHONY : __/pico-sdk/src/common/pico_time/timeout_helper.c.i
 
 __/pico-sdk/src/common/pico_time/timeout_helper.s: __/pico-sdk/src/common/pico_time/timeout_helper.c.s
@@ -295,7 +295,7 @@ __/pico-sdk/src/common/pico_time/timeout_helper.s: __/pico-sdk/src/common/pico_t
 
 # target to generate assembly for a file
 __/pico-sdk/src/common/pico_time/timeout_helper.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_time/timeout_helper.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_time/timeout_helper.c.s
 .PHONY : __/pico-sdk/src/common/pico_time/timeout_helper.c.s
 
 __/pico-sdk/src/common/pico_util/datetime.o: __/pico-sdk/src/common/pico_util/datetime.c.o
@@ -303,7 +303,7 @@ __/pico-sdk/src/common/pico_util/datetime.o: __/pico-sdk/src/common/pico_util/da
 
 # target to build an object file
 __/pico-sdk/src/common/pico_util/datetime.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_util/datetime.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_util/datetime.c.o
 .PHONY : __/pico-sdk/src/common/pico_util/datetime.c.o
 
 __/pico-sdk/src/common/pico_util/datetime.i: __/pico-sdk/src/common/pico_util/datetime.c.i
@@ -311,7 +311,7 @@ __/pico-sdk/src/common/pico_util/datetime.i: __/pico-sdk/src/common/pico_util/da
 
 # target to preprocess a source file
 __/pico-sdk/src/common/pico_util/datetime.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_util/datetime.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_util/datetime.c.i
 .PHONY : __/pico-sdk/src/common/pico_util/datetime.c.i
 
 __/pico-sdk/src/common/pico_util/datetime.s: __/pico-sdk/src/common/pico_util/datetime.c.s
@@ -319,7 +319,7 @@ __/pico-sdk/src/common/pico_util/datetime.s: __/pico-sdk/src/common/pico_util/da
 
 # target to generate assembly for a file
 __/pico-sdk/src/common/pico_util/datetime.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_util/datetime.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_util/datetime.c.s
 .PHONY : __/pico-sdk/src/common/pico_util/datetime.c.s
 
 __/pico-sdk/src/common/pico_util/pheap.o: __/pico-sdk/src/common/pico_util/pheap.c.o
@@ -327,7 +327,7 @@ __/pico-sdk/src/common/pico_util/pheap.o: __/pico-sdk/src/common/pico_util/pheap
 
 # target to build an object file
 __/pico-sdk/src/common/pico_util/pheap.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_util/pheap.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_util/pheap.c.o
 .PHONY : __/pico-sdk/src/common/pico_util/pheap.c.o
 
 __/pico-sdk/src/common/pico_util/pheap.i: __/pico-sdk/src/common/pico_util/pheap.c.i
@@ -335,7 +335,7 @@ __/pico-sdk/src/common/pico_util/pheap.i: __/pico-sdk/src/common/pico_util/pheap
 
 # target to preprocess a source file
 __/pico-sdk/src/common/pico_util/pheap.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_util/pheap.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_util/pheap.c.i
 .PHONY : __/pico-sdk/src/common/pico_util/pheap.c.i
 
 __/pico-sdk/src/common/pico_util/pheap.s: __/pico-sdk/src/common/pico_util/pheap.c.s
@@ -343,7 +343,7 @@ __/pico-sdk/src/common/pico_util/pheap.s: __/pico-sdk/src/common/pico_util/pheap
 
 # target to generate assembly for a file
 __/pico-sdk/src/common/pico_util/pheap.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_util/pheap.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_util/pheap.c.s
 .PHONY : __/pico-sdk/src/common/pico_util/pheap.c.s
 
 __/pico-sdk/src/common/pico_util/queue.o: __/pico-sdk/src/common/pico_util/queue.c.o
@@ -351,7 +351,7 @@ __/pico-sdk/src/common/pico_util/queue.o: __/pico-sdk/src/common/pico_util/queue
 
 # target to build an object file
 __/pico-sdk/src/common/pico_util/queue.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_util/queue.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_util/queue.c.o
 .PHONY : __/pico-sdk/src/common/pico_util/queue.c.o
 
 __/pico-sdk/src/common/pico_util/queue.i: __/pico-sdk/src/common/pico_util/queue.c.i
@@ -359,7 +359,7 @@ __/pico-sdk/src/common/pico_util/queue.i: __/pico-sdk/src/common/pico_util/queue
 
 # target to preprocess a source file
 __/pico-sdk/src/common/pico_util/queue.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_util/queue.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_util/queue.c.i
 .PHONY : __/pico-sdk/src/common/pico_util/queue.c.i
 
 __/pico-sdk/src/common/pico_util/queue.s: __/pico-sdk/src/common/pico_util/queue.c.s
@@ -367,7 +367,7 @@ __/pico-sdk/src/common/pico_util/queue.s: __/pico-sdk/src/common/pico_util/queue
 
 # target to generate assembly for a file
 __/pico-sdk/src/common/pico_util/queue.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_util/queue.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/common/pico_util/queue.c.s
 .PHONY : __/pico-sdk/src/common/pico_util/queue.c.s
 
 __/pico-sdk/src/rp2350/pico_platform/platform.o: __/pico-sdk/src/rp2350/pico_platform/platform.c.o
@@ -375,7 +375,7 @@ __/pico-sdk/src/rp2350/pico_platform/platform.o: __/pico-sdk/src/rp2350/pico_pla
 
 # target to build an object file
 __/pico-sdk/src/rp2350/pico_platform/platform.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2350/pico_platform/platform.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2350/pico_platform/platform.c.o
 .PHONY : __/pico-sdk/src/rp2350/pico_platform/platform.c.o
 
 __/pico-sdk/src/rp2350/pico_platform/platform.i: __/pico-sdk/src/rp2350/pico_platform/platform.c.i
@@ -383,7 +383,7 @@ __/pico-sdk/src/rp2350/pico_platform/platform.i: __/pico-sdk/src/rp2350/pico_pla
 
 # target to preprocess a source file
 __/pico-sdk/src/rp2350/pico_platform/platform.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2350/pico_platform/platform.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2350/pico_platform/platform.c.i
 .PHONY : __/pico-sdk/src/rp2350/pico_platform/platform.c.i
 
 __/pico-sdk/src/rp2350/pico_platform/platform.s: __/pico-sdk/src/rp2350/pico_platform/platform.c.s
@@ -391,7 +391,7 @@ __/pico-sdk/src/rp2350/pico_platform/platform.s: __/pico-sdk/src/rp2350/pico_pla
 
 # target to generate assembly for a file
 __/pico-sdk/src/rp2350/pico_platform/platform.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2350/pico_platform/platform.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2350/pico_platform/platform.c.s
 .PHONY : __/pico-sdk/src/rp2350/pico_platform/platform.c.s
 
 __/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.o: __/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
@@ -399,7 +399,7 @@ __/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.o: __/pico-sdk/src/rp2_c
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
 .PHONY : __/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
 
 __/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.i: __/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
@@ -407,7 +407,7 @@ __/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.i: __/pico-sdk/src/rp2_c
 
 # target to preprocess a source file
 __/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
 .PHONY : __/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
 
 __/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.s: __/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
@@ -415,7 +415,7 @@ __/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.s: __/pico-sdk/src/rp2_c
 
 # target to generate assembly for a file
 __/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
 .PHONY : __/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
 
 __/pico-sdk/src/rp2_common/hardware_clocks/clocks.o: __/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
@@ -423,7 +423,7 @@ __/pico-sdk/src/rp2_common/hardware_clocks/clocks.o: __/pico-sdk/src/rp2_common/
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
 .PHONY : __/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
 
 __/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: __/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
@@ -431,7 +431,7 @@ __/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: __/pico-sdk/src/rp2_common/
 
 # target to preprocess a source file
 __/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 .PHONY : __/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 
 __/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: __/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
@@ -439,7 +439,7 @@ __/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: __/pico-sdk/src/rp2_common/
 
 # target to generate assembly for a file
 __/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 .PHONY : __/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 
 __/pico-sdk/src/rp2_common/hardware_divider/divider.o: __/pico-sdk/src/rp2_common/hardware_divider/divider.c.o
@@ -447,7 +447,7 @@ __/pico-sdk/src/rp2_common/hardware_divider/divider.o: __/pico-sdk/src/rp2_commo
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/hardware_divider/divider.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_divider/divider.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_divider/divider.c.o
 .PHONY : __/pico-sdk/src/rp2_common/hardware_divider/divider.c.o
 
 __/pico-sdk/src/rp2_common/hardware_divider/divider.i: __/pico-sdk/src/rp2_common/hardware_divider/divider.c.i
@@ -455,7 +455,7 @@ __/pico-sdk/src/rp2_common/hardware_divider/divider.i: __/pico-sdk/src/rp2_commo
 
 # target to preprocess a source file
 __/pico-sdk/src/rp2_common/hardware_divider/divider.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_divider/divider.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_divider/divider.c.i
 .PHONY : __/pico-sdk/src/rp2_common/hardware_divider/divider.c.i
 
 __/pico-sdk/src/rp2_common/hardware_divider/divider.s: __/pico-sdk/src/rp2_common/hardware_divider/divider.c.s
@@ -463,7 +463,7 @@ __/pico-sdk/src/rp2_common/hardware_divider/divider.s: __/pico-sdk/src/rp2_commo
 
 # target to generate assembly for a file
 __/pico-sdk/src/rp2_common/hardware_divider/divider.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_divider/divider.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_divider/divider.c.s
 .PHONY : __/pico-sdk/src/rp2_common/hardware_divider/divider.c.s
 
 __/pico-sdk/src/rp2_common/hardware_gpio/gpio.o: __/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
@@ -471,7 +471,7 @@ __/pico-sdk/src/rp2_common/hardware_gpio/gpio.o: __/pico-sdk/src/rp2_common/hard
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
 .PHONY : __/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
 
 __/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: __/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
@@ -479,7 +479,7 @@ __/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: __/pico-sdk/src/rp2_common/hard
 
 # target to preprocess a source file
 __/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 .PHONY : __/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 
 __/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: __/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
@@ -487,7 +487,7 @@ __/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: __/pico-sdk/src/rp2_common/hard
 
 # target to generate assembly for a file
 __/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : __/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
 __/pico-sdk/src/rp2_common/hardware_i2c/i2c.o: __/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
@@ -495,7 +495,7 @@ __/pico-sdk/src/rp2_common/hardware_i2c/i2c.o: __/pico-sdk/src/rp2_common/hardwa
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
 .PHONY : __/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
 
 __/pico-sdk/src/rp2_common/hardware_i2c/i2c.i: __/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
@@ -503,7 +503,7 @@ __/pico-sdk/src/rp2_common/hardware_i2c/i2c.i: __/pico-sdk/src/rp2_common/hardwa
 
 # target to preprocess a source file
 __/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
 .PHONY : __/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
 
 __/pico-sdk/src/rp2_common/hardware_i2c/i2c.s: __/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
@@ -511,7 +511,7 @@ __/pico-sdk/src/rp2_common/hardware_i2c/i2c.s: __/pico-sdk/src/rp2_common/hardwa
 
 # target to generate assembly for a file
 __/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
 .PHONY : __/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
 
 __/pico-sdk/src/rp2_common/hardware_irq/irq.o: __/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
@@ -519,7 +519,7 @@ __/pico-sdk/src/rp2_common/hardware_irq/irq.o: __/pico-sdk/src/rp2_common/hardwa
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/hardware_irq/irq.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
 .PHONY : __/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
 
 __/pico-sdk/src/rp2_common/hardware_irq/irq.i: __/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
@@ -527,7 +527,7 @@ __/pico-sdk/src/rp2_common/hardware_irq/irq.i: __/pico-sdk/src/rp2_common/hardwa
 
 # target to preprocess a source file
 __/pico-sdk/src/rp2_common/hardware_irq/irq.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 .PHONY : __/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 
 __/pico-sdk/src/rp2_common/hardware_irq/irq.s: __/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
@@ -535,7 +535,7 @@ __/pico-sdk/src/rp2_common/hardware_irq/irq.s: __/pico-sdk/src/rp2_common/hardwa
 
 # target to generate assembly for a file
 __/pico-sdk/src/rp2_common/hardware_irq/irq.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 .PHONY : __/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 
 __/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.o: __/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
@@ -543,7 +543,7 @@ __/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.o: __/pico-sdk/src/rp2
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
 .PHONY : __/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
 
 __/pico-sdk/src/rp2_common/hardware_pll/pll.o: __/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
@@ -551,7 +551,7 @@ __/pico-sdk/src/rp2_common/hardware_pll/pll.o: __/pico-sdk/src/rp2_common/hardwa
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/hardware_pll/pll.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
 .PHONY : __/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
 
 __/pico-sdk/src/rp2_common/hardware_pll/pll.i: __/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
@@ -559,7 +559,7 @@ __/pico-sdk/src/rp2_common/hardware_pll/pll.i: __/pico-sdk/src/rp2_common/hardwa
 
 # target to preprocess a source file
 __/pico-sdk/src/rp2_common/hardware_pll/pll.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 .PHONY : __/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 
 __/pico-sdk/src/rp2_common/hardware_pll/pll.s: __/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
@@ -567,7 +567,7 @@ __/pico-sdk/src/rp2_common/hardware_pll/pll.s: __/pico-sdk/src/rp2_common/hardwa
 
 # target to generate assembly for a file
 __/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : __/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 
 __/pico-sdk/src/rp2_common/hardware_sync/sync.o: __/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
@@ -575,7 +575,7 @@ __/pico-sdk/src/rp2_common/hardware_sync/sync.o: __/pico-sdk/src/rp2_common/hard
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/hardware_sync/sync.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
 .PHONY : __/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
 
 __/pico-sdk/src/rp2_common/hardware_sync/sync.i: __/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
@@ -583,7 +583,7 @@ __/pico-sdk/src/rp2_common/hardware_sync/sync.i: __/pico-sdk/src/rp2_common/hard
 
 # target to preprocess a source file
 __/pico-sdk/src/rp2_common/hardware_sync/sync.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 .PHONY : __/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 
 __/pico-sdk/src/rp2_common/hardware_sync/sync.s: __/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
@@ -591,7 +591,7 @@ __/pico-sdk/src/rp2_common/hardware_sync/sync.s: __/pico-sdk/src/rp2_common/hard
 
 # target to generate assembly for a file
 __/pico-sdk/src/rp2_common/hardware_sync/sync.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 .PHONY : __/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 
 __/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.o: __/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
@@ -599,7 +599,7 @@ __/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.o: __/pico-sdk
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
 .PHONY : __/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
 
 __/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.i: __/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
@@ -607,7 +607,7 @@ __/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.i: __/pico-sdk
 
 # target to preprocess a source file
 __/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
 .PHONY : __/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
 
 __/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.s: __/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
@@ -615,7 +615,7 @@ __/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.s: __/pico-sdk
 
 # target to generate assembly for a file
 __/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
 .PHONY : __/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
 
 __/pico-sdk/src/rp2_common/hardware_ticks/ticks.o: __/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
@@ -623,7 +623,7 @@ __/pico-sdk/src/rp2_common/hardware_ticks/ticks.o: __/pico-sdk/src/rp2_common/ha
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
 .PHONY : __/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
 
 __/pico-sdk/src/rp2_common/hardware_ticks/ticks.i: __/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
@@ -631,7 +631,7 @@ __/pico-sdk/src/rp2_common/hardware_ticks/ticks.i: __/pico-sdk/src/rp2_common/ha
 
 # target to preprocess a source file
 __/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
 .PHONY : __/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
 
 __/pico-sdk/src/rp2_common/hardware_ticks/ticks.s: __/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
@@ -639,7 +639,7 @@ __/pico-sdk/src/rp2_common/hardware_ticks/ticks.s: __/pico-sdk/src/rp2_common/ha
 
 # target to generate assembly for a file
 __/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
 .PHONY : __/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
 
 __/pico-sdk/src/rp2_common/hardware_timer/timer.o: __/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
@@ -647,7 +647,7 @@ __/pico-sdk/src/rp2_common/hardware_timer/timer.o: __/pico-sdk/src/rp2_common/ha
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/hardware_timer/timer.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
 .PHONY : __/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
 
 __/pico-sdk/src/rp2_common/hardware_timer/timer.i: __/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
@@ -655,7 +655,7 @@ __/pico-sdk/src/rp2_common/hardware_timer/timer.i: __/pico-sdk/src/rp2_common/ha
 
 # target to preprocess a source file
 __/pico-sdk/src/rp2_common/hardware_timer/timer.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 .PHONY : __/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 
 __/pico-sdk/src/rp2_common/hardware_timer/timer.s: __/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
@@ -663,7 +663,7 @@ __/pico-sdk/src/rp2_common/hardware_timer/timer.s: __/pico-sdk/src/rp2_common/ha
 
 # target to generate assembly for a file
 __/pico-sdk/src/rp2_common/hardware_timer/timer.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 .PHONY : __/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 
 __/pico-sdk/src/rp2_common/hardware_uart/uart.o: __/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
@@ -671,7 +671,7 @@ __/pico-sdk/src/rp2_common/hardware_uart/uart.o: __/pico-sdk/src/rp2_common/hard
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/hardware_uart/uart.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
 .PHONY : __/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
 
 __/pico-sdk/src/rp2_common/hardware_uart/uart.i: __/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
@@ -679,7 +679,7 @@ __/pico-sdk/src/rp2_common/hardware_uart/uart.i: __/pico-sdk/src/rp2_common/hard
 
 # target to preprocess a source file
 __/pico-sdk/src/rp2_common/hardware_uart/uart.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 .PHONY : __/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 
 __/pico-sdk/src/rp2_common/hardware_uart/uart.s: __/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
@@ -687,7 +687,7 @@ __/pico-sdk/src/rp2_common/hardware_uart/uart.s: __/pico-sdk/src/rp2_common/hard
 
 # target to generate assembly for a file
 __/pico-sdk/src/rp2_common/hardware_uart/uart.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 .PHONY : __/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 
 __/pico-sdk/src/rp2_common/hardware_vreg/vreg.o: __/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
@@ -695,7 +695,7 @@ __/pico-sdk/src/rp2_common/hardware_vreg/vreg.o: __/pico-sdk/src/rp2_common/hard
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
 .PHONY : __/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
 
 __/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: __/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
@@ -703,7 +703,7 @@ __/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: __/pico-sdk/src/rp2_common/hard
 
 # target to preprocess a source file
 __/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 .PHONY : __/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 
 __/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: __/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
@@ -711,7 +711,7 @@ __/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: __/pico-sdk/src/rp2_common/hard
 
 # target to generate assembly for a file
 __/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 .PHONY : __/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 
 __/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.o: __/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
@@ -719,7 +719,7 @@ __/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.o: __/pico-sdk/src/rp2_com
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
 .PHONY : __/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
 
 __/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: __/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
@@ -727,7 +727,7 @@ __/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: __/pico-sdk/src/rp2_com
 
 # target to preprocess a source file
 __/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 .PHONY : __/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 
 __/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: __/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
@@ -735,7 +735,7 @@ __/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: __/pico-sdk/src/rp2_com
 
 # target to generate assembly for a file
 __/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 .PHONY : __/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 
 __/pico-sdk/src/rp2_common/hardware_xosc/xosc.o: __/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
@@ -743,7 +743,7 @@ __/pico-sdk/src/rp2_common/hardware_xosc/xosc.o: __/pico-sdk/src/rp2_common/hard
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
 .PHONY : __/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
 
 __/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: __/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
@@ -751,7 +751,7 @@ __/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: __/pico-sdk/src/rp2_common/hard
 
 # target to preprocess a source file
 __/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 .PHONY : __/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 
 __/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: __/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
@@ -759,7 +759,7 @@ __/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: __/pico-sdk/src/rp2_common/hard
 
 # target to generate assembly for a file
 __/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 .PHONY : __/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 
 __/pico-sdk/src/rp2_common/pico_atomic/atomic.o: __/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
@@ -767,7 +767,7 @@ __/pico-sdk/src/rp2_common/pico_atomic/atomic.o: __/pico-sdk/src/rp2_common/pico
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
 .PHONY : __/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
 
 __/pico-sdk/src/rp2_common/pico_atomic/atomic.i: __/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
@@ -775,7 +775,7 @@ __/pico-sdk/src/rp2_common/pico_atomic/atomic.i: __/pico-sdk/src/rp2_common/pico
 
 # target to preprocess a source file
 __/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
 .PHONY : __/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
 
 __/pico-sdk/src/rp2_common/pico_atomic/atomic.s: __/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
@@ -783,7 +783,7 @@ __/pico-sdk/src/rp2_common/pico_atomic/atomic.s: __/pico-sdk/src/rp2_common/pico
 
 # target to generate assembly for a file
 __/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
 .PHONY : __/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
 
 __/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o: __/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
@@ -791,7 +791,7 @@ __/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o: __/pico-sdk/src/rp2_com
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
 .PHONY : __/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
 
 __/pico-sdk/src/rp2_common/pico_bootrom/bootrom.o: __/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
@@ -799,7 +799,7 @@ __/pico-sdk/src/rp2_common/pico_bootrom/bootrom.o: __/pico-sdk/src/rp2_common/pi
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
 .PHONY : __/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
 
 __/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: __/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
@@ -807,7 +807,7 @@ __/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: __/pico-sdk/src/rp2_common/pi
 
 # target to preprocess a source file
 __/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 .PHONY : __/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 
 __/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: __/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
@@ -815,7 +815,7 @@ __/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: __/pico-sdk/src/rp2_common/pi
 
 # target to generate assembly for a file
 __/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 .PHONY : __/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 
 __/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.o: __/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
@@ -823,7 +823,7 @@ __/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.o: __/pico-sdk/src/rp2_comm
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
 .PHONY : __/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
 
 __/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.i: __/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
@@ -831,7 +831,7 @@ __/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.i: __/pico-sdk/src/rp2_comm
 
 # target to preprocess a source file
 __/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
 .PHONY : __/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
 
 __/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.s: __/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
@@ -839,7 +839,7 @@ __/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.s: __/pico-sdk/src/rp2_comm
 
 # target to generate assembly for a file
 __/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
 .PHONY : __/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
 
 __/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.o: __/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
@@ -847,7 +847,7 @@ __/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.o: __/pico-sdk/s
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
 .PHONY : __/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
 
 __/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.i: __/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
@@ -855,7 +855,7 @@ __/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.i: __/pico-sdk/s
 
 # target to preprocess a source file
 __/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
 .PHONY : __/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
 
 __/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.s: __/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
@@ -863,7 +863,7 @@ __/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.s: __/pico-sdk/s
 
 # target to generate assembly for a file
 __/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
 .PHONY : __/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
 
 __/pico-sdk/src/rp2_common/pico_crt0/crt0.o: __/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
@@ -871,7 +871,7 @@ __/pico-sdk/src/rp2_common/pico_crt0/crt0.o: __/pico-sdk/src/rp2_common/pico_crt
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
 .PHONY : __/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
 
 __/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.o: __/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
@@ -879,7 +879,7 @@ __/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.o: __/pico-sdk/src/rp2_co
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
 .PHONY : __/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
 
 __/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.i: __/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
@@ -887,7 +887,7 @@ __/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.i: __/pico-sdk/src/rp2_co
 
 # target to preprocess a source file
 __/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
 .PHONY : __/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
 
 __/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.s: __/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
@@ -895,7 +895,7 @@ __/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.s: __/pico-sdk/src/rp2_co
 
 # target to generate assembly for a file
 __/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
 .PHONY : __/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
 
 __/pico-sdk/src/rp2_common/pico_divider/divider_compiler.o: __/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o
@@ -903,7 +903,7 @@ __/pico-sdk/src/rp2_common/pico_divider/divider_compiler.o: __/pico-sdk/src/rp2_
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o
 .PHONY : __/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o
 
 __/pico-sdk/src/rp2_common/pico_divider/divider_compiler.i: __/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.i
@@ -911,7 +911,7 @@ __/pico-sdk/src/rp2_common/pico_divider/divider_compiler.i: __/pico-sdk/src/rp2_
 
 # target to preprocess a source file
 __/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.i
 .PHONY : __/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.i
 
 __/pico-sdk/src/rp2_common/pico_divider/divider_compiler.s: __/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.s
@@ -919,7 +919,7 @@ __/pico-sdk/src/rp2_common/pico_divider/divider_compiler.s: __/pico-sdk/src/rp2_
 
 # target to generate assembly for a file
 __/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.s
 .PHONY : __/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.s
 
 __/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.o: __/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
@@ -927,7 +927,7 @@ __/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.o: __/pico-sdk/src/rp2_c
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
 .PHONY : __/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
 
 __/pico-sdk/src/rp2_common/pico_double/double_conv_m33.o: __/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.o
@@ -935,7 +935,7 @@ __/pico-sdk/src/rp2_common/pico_double/double_conv_m33.o: __/pico-sdk/src/rp2_co
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.o
 .PHONY : __/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.o
 
 __/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.o: __/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.o
@@ -943,7 +943,7 @@ __/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.o: __/pico-sdk/src/rp2_com
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.o
 .PHONY : __/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.o
 
 __/pico-sdk/src/rp2_common/pico_double/double_math.o: __/pico-sdk/src/rp2_common/pico_double/double_math.c.o
@@ -951,7 +951,7 @@ __/pico-sdk/src/rp2_common/pico_double/double_math.o: __/pico-sdk/src/rp2_common
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/pico_double/double_math.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_double/double_math.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_double/double_math.c.o
 .PHONY : __/pico-sdk/src/rp2_common/pico_double/double_math.c.o
 
 __/pico-sdk/src/rp2_common/pico_double/double_math.i: __/pico-sdk/src/rp2_common/pico_double/double_math.c.i
@@ -959,7 +959,7 @@ __/pico-sdk/src/rp2_common/pico_double/double_math.i: __/pico-sdk/src/rp2_common
 
 # target to preprocess a source file
 __/pico-sdk/src/rp2_common/pico_double/double_math.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 .PHONY : __/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 
 __/pico-sdk/src/rp2_common/pico_double/double_math.s: __/pico-sdk/src/rp2_common/pico_double/double_math.c.s
@@ -967,7 +967,7 @@ __/pico-sdk/src/rp2_common/pico_double/double_math.s: __/pico-sdk/src/rp2_common
 
 # target to generate assembly for a file
 __/pico-sdk/src/rp2_common/pico_double/double_math.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 .PHONY : __/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 
 __/pico-sdk/src/rp2_common/pico_double/double_sci_m33.o: __/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.o
@@ -975,7 +975,7 @@ __/pico-sdk/src/rp2_common/pico_double/double_sci_m33.o: __/pico-sdk/src/rp2_com
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.o
 .PHONY : __/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.o
 
 __/pico-sdk/src/rp2_common/pico_flash/flash.o: __/pico-sdk/src/rp2_common/pico_flash/flash.c.o
@@ -983,7 +983,7 @@ __/pico-sdk/src/rp2_common/pico_flash/flash.o: __/pico-sdk/src/rp2_common/pico_f
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/pico_flash/flash.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_flash/flash.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_flash/flash.c.o
 .PHONY : __/pico-sdk/src/rp2_common/pico_flash/flash.c.o
 
 __/pico-sdk/src/rp2_common/pico_flash/flash.i: __/pico-sdk/src/rp2_common/pico_flash/flash.c.i
@@ -991,7 +991,7 @@ __/pico-sdk/src/rp2_common/pico_flash/flash.i: __/pico-sdk/src/rp2_common/pico_f
 
 # target to preprocess a source file
 __/pico-sdk/src/rp2_common/pico_flash/flash.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_flash/flash.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_flash/flash.c.i
 .PHONY : __/pico-sdk/src/rp2_common/pico_flash/flash.c.i
 
 __/pico-sdk/src/rp2_common/pico_flash/flash.s: __/pico-sdk/src/rp2_common/pico_flash/flash.c.s
@@ -999,7 +999,7 @@ __/pico-sdk/src/rp2_common/pico_flash/flash.s: __/pico-sdk/src/rp2_common/pico_f
 
 # target to generate assembly for a file
 __/pico-sdk/src/rp2_common/pico_flash/flash.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_flash/flash.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_flash/flash.c.s
 .PHONY : __/pico-sdk/src/rp2_common/pico_flash/flash.c.s
 
 __/pico-sdk/src/rp2_common/pico_float/float_common_m33.o: __/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.o
@@ -1007,7 +1007,7 @@ __/pico-sdk/src/rp2_common/pico_float/float_common_m33.o: __/pico-sdk/src/rp2_co
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.o
 .PHONY : __/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.o
 
 __/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.o: __/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.o
@@ -1015,7 +1015,7 @@ __/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.o: __/pico-sdk/src/rp2_co
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.o
 .PHONY : __/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.o
 
 __/pico-sdk/src/rp2_common/pico_float/float_math.o: __/pico-sdk/src/rp2_common/pico_float/float_math.c.o
@@ -1023,7 +1023,7 @@ __/pico-sdk/src/rp2_common/pico_float/float_math.o: __/pico-sdk/src/rp2_common/p
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/pico_float/float_math.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_float/float_math.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_float/float_math.c.o
 .PHONY : __/pico-sdk/src/rp2_common/pico_float/float_math.c.o
 
 __/pico-sdk/src/rp2_common/pico_float/float_math.i: __/pico-sdk/src/rp2_common/pico_float/float_math.c.i
@@ -1031,7 +1031,7 @@ __/pico-sdk/src/rp2_common/pico_float/float_math.i: __/pico-sdk/src/rp2_common/p
 
 # target to preprocess a source file
 __/pico-sdk/src/rp2_common/pico_float/float_math.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 .PHONY : __/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 
 __/pico-sdk/src/rp2_common/pico_float/float_math.s: __/pico-sdk/src/rp2_common/pico_float/float_math.c.s
@@ -1039,7 +1039,7 @@ __/pico-sdk/src/rp2_common/pico_float/float_math.s: __/pico-sdk/src/rp2_common/p
 
 # target to generate assembly for a file
 __/pico-sdk/src/rp2_common/pico_float/float_math.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 .PHONY : __/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 
 __/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.o: __/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.o
@@ -1047,7 +1047,7 @@ __/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.o: __/pico-sdk/src/rp2_c
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.o
 .PHONY : __/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.o
 
 __/pico-sdk/src/rp2_common/pico_malloc/malloc.o: __/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
@@ -1055,7 +1055,7 @@ __/pico-sdk/src/rp2_common/pico_malloc/malloc.o: __/pico-sdk/src/rp2_common/pico
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
 .PHONY : __/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
 
 __/pico-sdk/src/rp2_common/pico_malloc/malloc.i: __/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
@@ -1063,7 +1063,7 @@ __/pico-sdk/src/rp2_common/pico_malloc/malloc.i: __/pico-sdk/src/rp2_common/pico
 
 # target to preprocess a source file
 __/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
 .PHONY : __/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
 
 __/pico-sdk/src/rp2_common/pico_malloc/malloc.s: __/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
@@ -1071,7 +1071,7 @@ __/pico-sdk/src/rp2_common/pico_malloc/malloc.s: __/pico-sdk/src/rp2_common/pico
 
 # target to generate assembly for a file
 __/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
 .PHONY : __/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
 
 __/pico-sdk/src/rp2_common/pico_platform_common/common.o: __/pico-sdk/src/rp2_common/pico_platform_common/common.c.o
@@ -1079,7 +1079,7 @@ __/pico-sdk/src/rp2_common/pico_platform_common/common.o: __/pico-sdk/src/rp2_co
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/pico_platform_common/common.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_platform_common/common.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_platform_common/common.c.o
 .PHONY : __/pico-sdk/src/rp2_common/pico_platform_common/common.c.o
 
 __/pico-sdk/src/rp2_common/pico_platform_common/common.i: __/pico-sdk/src/rp2_common/pico_platform_common/common.c.i
@@ -1087,7 +1087,7 @@ __/pico-sdk/src/rp2_common/pico_platform_common/common.i: __/pico-sdk/src/rp2_co
 
 # target to preprocess a source file
 __/pico-sdk/src/rp2_common/pico_platform_common/common.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_platform_common/common.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_platform_common/common.c.i
 .PHONY : __/pico-sdk/src/rp2_common/pico_platform_common/common.c.i
 
 __/pico-sdk/src/rp2_common/pico_platform_common/common.s: __/pico-sdk/src/rp2_common/pico_platform_common/common.c.s
@@ -1095,7 +1095,7 @@ __/pico-sdk/src/rp2_common/pico_platform_common/common.s: __/pico-sdk/src/rp2_co
 
 # target to generate assembly for a file
 __/pico-sdk/src/rp2_common/pico_platform_common/common.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_platform_common/common.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_platform_common/common.c.s
 .PHONY : __/pico-sdk/src/rp2_common/pico_platform_common/common.c.s
 
 __/pico-sdk/src/rp2_common/pico_platform_panic/panic.o: __/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
@@ -1103,7 +1103,7 @@ __/pico-sdk/src/rp2_common/pico_platform_panic/panic.o: __/pico-sdk/src/rp2_comm
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
 .PHONY : __/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
 
 __/pico-sdk/src/rp2_common/pico_platform_panic/panic.i: __/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
@@ -1111,7 +1111,7 @@ __/pico-sdk/src/rp2_common/pico_platform_panic/panic.i: __/pico-sdk/src/rp2_comm
 
 # target to preprocess a source file
 __/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
 .PHONY : __/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
 
 __/pico-sdk/src/rp2_common/pico_platform_panic/panic.s: __/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
@@ -1119,7 +1119,7 @@ __/pico-sdk/src/rp2_common/pico_platform_panic/panic.s: __/pico-sdk/src/rp2_comm
 
 # target to generate assembly for a file
 __/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
 .PHONY : __/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
 
 __/pico-sdk/src/rp2_common/pico_printf/printf.o: __/pico-sdk/src/rp2_common/pico_printf/printf.c.o
@@ -1127,7 +1127,7 @@ __/pico-sdk/src/rp2_common/pico_printf/printf.o: __/pico-sdk/src/rp2_common/pico
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/pico_printf/printf.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_printf/printf.c.o
 .PHONY : __/pico-sdk/src/rp2_common/pico_printf/printf.c.o
 
 __/pico-sdk/src/rp2_common/pico_printf/printf.i: __/pico-sdk/src/rp2_common/pico_printf/printf.c.i
@@ -1135,7 +1135,7 @@ __/pico-sdk/src/rp2_common/pico_printf/printf.i: __/pico-sdk/src/rp2_common/pico
 
 # target to preprocess a source file
 __/pico-sdk/src/rp2_common/pico_printf/printf.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 .PHONY : __/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 
 __/pico-sdk/src/rp2_common/pico_printf/printf.s: __/pico-sdk/src/rp2_common/pico_printf/printf.c.s
@@ -1143,7 +1143,7 @@ __/pico-sdk/src/rp2_common/pico_printf/printf.s: __/pico-sdk/src/rp2_common/pico
 
 # target to generate assembly for a file
 __/pico-sdk/src/rp2_common/pico_printf/printf.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 .PHONY : __/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 
 __/pico-sdk/src/rp2_common/pico_runtime/runtime.o: __/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
@@ -1151,7 +1151,7 @@ __/pico-sdk/src/rp2_common/pico_runtime/runtime.o: __/pico-sdk/src/rp2_common/pi
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
 .PHONY : __/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
 
 __/pico-sdk/src/rp2_common/pico_runtime/runtime.i: __/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
@@ -1159,7 +1159,7 @@ __/pico-sdk/src/rp2_common/pico_runtime/runtime.i: __/pico-sdk/src/rp2_common/pi
 
 # target to preprocess a source file
 __/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 .PHONY : __/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 
 __/pico-sdk/src/rp2_common/pico_runtime/runtime.s: __/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
@@ -1167,7 +1167,7 @@ __/pico-sdk/src/rp2_common/pico_runtime/runtime.s: __/pico-sdk/src/rp2_common/pi
 
 # target to generate assembly for a file
 __/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 .PHONY : __/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 
 __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.o: __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
@@ -1175,7 +1175,7 @@ __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.o: __/pico-sdk/src/rp2
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
 .PHONY : __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
 
 __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.i: __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
@@ -1183,7 +1183,7 @@ __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.i: __/pico-sdk/src/rp2
 
 # target to preprocess a source file
 __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
 .PHONY : __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
 
 __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.s: __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
@@ -1191,7 +1191,7 @@ __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.s: __/pico-sdk/src/rp2
 
 # target to generate assembly for a file
 __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
 .PHONY : __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
 
 __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.o: __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
@@ -1199,7 +1199,7 @@ __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.o: __/pico-sdk/
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
 .PHONY : __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
 
 __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.i: __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
@@ -1207,7 +1207,7 @@ __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.i: __/pico-sdk/
 
 # target to preprocess a source file
 __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
 .PHONY : __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
 
 __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.s: __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
@@ -1215,7 +1215,7 @@ __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.s: __/pico-sdk/
 
 # target to generate assembly for a file
 __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
 .PHONY : __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
 
 __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.o: __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
@@ -1223,7 +1223,7 @@ __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.o: __/pico
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
 .PHONY : __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
 
 __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.i: __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
@@ -1231,7 +1231,7 @@ __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.i: __/pico
 
 # target to preprocess a source file
 __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
 .PHONY : __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
 
 __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.s: __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
@@ -1239,7 +1239,7 @@ __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.s: __/pico
 
 # target to generate assembly for a file
 __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
 .PHONY : __/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
 
 __/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.o: __/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
@@ -1247,7 +1247,7 @@ __/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.o: __/
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
 .PHONY : __/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
 
 __/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.i: __/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
@@ -1255,7 +1255,7 @@ __/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.i: __/
 
 # target to preprocess a source file
 __/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
 .PHONY : __/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
 
 __/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.s: __/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
@@ -1263,7 +1263,7 @@ __/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.s: __/
 
 # target to generate assembly for a file
 __/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
 .PHONY : __/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
 
 __/pico-sdk/src/rp2_common/pico_stdio/stdio.o: __/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
@@ -1271,7 +1271,7 @@ __/pico-sdk/src/rp2_common/pico_stdio/stdio.o: __/pico-sdk/src/rp2_common/pico_s
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
 .PHONY : __/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
 
 __/pico-sdk/src/rp2_common/pico_stdio/stdio.i: __/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
@@ -1279,7 +1279,7 @@ __/pico-sdk/src/rp2_common/pico_stdio/stdio.i: __/pico-sdk/src/rp2_common/pico_s
 
 # target to preprocess a source file
 __/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 .PHONY : __/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 
 __/pico-sdk/src/rp2_common/pico_stdio/stdio.s: __/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
@@ -1287,7 +1287,7 @@ __/pico-sdk/src/rp2_common/pico_stdio/stdio.s: __/pico-sdk/src/rp2_common/pico_s
 
 # target to generate assembly for a file
 __/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : __/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 
 __/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.o: __/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
@@ -1295,7 +1295,7 @@ __/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.o: __/pico-sdk/src/rp2_com
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
 .PHONY : __/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
 
 __/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: __/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
@@ -1303,7 +1303,7 @@ __/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: __/pico-sdk/src/rp2_com
 
 # target to preprocess a source file
 __/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 .PHONY : __/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 
 __/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: __/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
@@ -1311,7 +1311,7 @@ __/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: __/pico-sdk/src/rp2_com
 
 # target to generate assembly for a file
 __/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 .PHONY : __/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 
 __/pico-sdk/src/rp2_common/pico_stdlib/stdlib.o: __/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
@@ -1319,7 +1319,7 @@ __/pico-sdk/src/rp2_common/pico_stdlib/stdlib.o: __/pico-sdk/src/rp2_common/pico
 
 # target to build an object file
 __/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
 .PHONY : __/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
 
 __/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: __/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
@@ -1327,7 +1327,7 @@ __/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: __/pico-sdk/src/rp2_common/pico
 
 # target to preprocess a source file
 __/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 .PHONY : __/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 
 __/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: __/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
@@ -1335,7 +1335,7 @@ __/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: __/pico-sdk/src/rp2_common/pico
 
 # target to generate assembly for a file
 __/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/__/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : __/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
 src/bno08x.o: src/bno08x.cpp.o
@@ -1343,7 +1343,7 @@ src/bno08x.o: src/bno08x.cpp.o
 
 # target to build an object file
 src/bno08x.cpp.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/src/bno08x.cpp.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/src/bno08x.cpp.o
 .PHONY : src/bno08x.cpp.o
 
 src/bno08x.i: src/bno08x.cpp.i
@@ -1351,7 +1351,7 @@ src/bno08x.i: src/bno08x.cpp.i
 
 # target to preprocess a source file
 src/bno08x.cpp.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/src/bno08x.cpp.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/src/bno08x.cpp.i
 .PHONY : src/bno08x.cpp.i
 
 src/bno08x.s: src/bno08x.cpp.s
@@ -1359,7 +1359,7 @@ src/bno08x.s: src/bno08x.cpp.s
 
 # target to generate assembly for a file
 src/bno08x.cpp.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/src/bno08x.cpp.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/src/bno08x.cpp.s
 .PHONY : src/bno08x.cpp.s
 
 src/utils.o: src/utils.cpp.o
@@ -1367,7 +1367,7 @@ src/utils.o: src/utils.cpp.o
 
 # target to build an object file
 src/utils.cpp.o:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/src/utils.cpp.o
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/src/utils.cpp.o
 .PHONY : src/utils.cpp.o
 
 src/utils.i: src/utils.cpp.i
@@ -1375,7 +1375,7 @@ src/utils.i: src/utils.cpp.i
 
 # target to preprocess a source file
 src/utils.cpp.i:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/src/utils.cpp.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/src/utils.cpp.i
 .PHONY : src/utils.cpp.i
 
 src/utils.s: src/utils.cpp.s
@@ -1383,7 +1383,7 @@ src/utils.s: src/utils.cpp.s
 
 # target to generate assembly for a file
 src/utils.cpp.s:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/src/utils.cpp.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(MAKE) $(MAKESILENT) -f BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/build.make BNO08x_Pico_Library/CMakeFiles/BNO08x_Pico_Library.dir/src/utils.cpp.s
 .PHONY : src/utils.cpp.s
 
 # Help Target
@@ -1563,6 +1563,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

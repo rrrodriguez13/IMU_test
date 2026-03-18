@@ -4,7 +4,7 @@
 # compile C with /usr/bin/arm-none-eabi-gcc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/include
+C_INCLUDES = -I/home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/include
 
 C_FLAGS = -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse -g -O3 -DNDEBUG -std=gnu11
 

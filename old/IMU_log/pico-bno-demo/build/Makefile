@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo
+CMAKE_SOURCE_DIR = /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build
+CMAKE_BINARY_DIR = /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build/CMakeFiles /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build/CMakeFiles /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -141,32 +141,6 @@ bs2_default: cmake_check_build_system
 bs2_default/fast:
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default.dir/build.make pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default.dir/build
 .PHONY : bs2_default/fast
-
-#=============================================================================
-# Target rules for targets named picotoolForceReconfigure
-
-# Build rule for target.
-picotoolForceReconfigure: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 picotoolForceReconfigure
-.PHONY : picotoolForceReconfigure
-
-# fast build rule for target.
-picotoolForceReconfigure/fast:
-	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2350/boot_stage2/CMakeFiles/picotoolForceReconfigure.dir/build.make pico-sdk/src/rp2350/boot_stage2/CMakeFiles/picotoolForceReconfigure.dir/build
-.PHONY : picotoolForceReconfigure/fast
-
-#=============================================================================
-# Target rules for targets named picotoolBuild
-
-# Build rule for target.
-picotoolBuild: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 picotoolBuild
-.PHONY : picotoolBuild
-
-# fast build rule for target.
-picotoolBuild/fast:
-	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2350/boot_stage2/CMakeFiles/picotoolBuild.dir/build.make pico-sdk/src/rp2350/boot_stage2/CMakeFiles/picotoolBuild.dir/build
-.PHONY : picotoolBuild/fast
 
 #=============================================================================
 # Target rules for targets named bs2_default_bin
@@ -2078,8 +2052,6 @@ help:
 	@echo "... bs2_default_bin"
 	@echo "... cyw43_driver_picow_cyw43_bus_pio_spi_pio_h"
 	@echo "... pico_status_led_ws2812_pio_h"
-	@echo "... picotoolBuild"
-	@echo "... picotoolForceReconfigure"
 	@echo "... pioasmBuild"
 	@echo "... BNO08x_Pico_Library"
 	@echo "... bs2_default"

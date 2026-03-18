@@ -1,66 +1,81 @@
 #include <stdio.h>
 #include <math.h>
+
 #include "pico/stdlib.h"
+#include "hardware/i2c.h"
+#include "hardware/gpio.h"
 
 #include "bno08x.h"
-#include "utils.h"
 
-// IMU object
+static const uint SDA_PIN = 16;
+static const uint SCL_PIN = 17;
+
 BNO08x IMU;
 
+static void i2c_scan(i2c_inst_t *i2c) {
+    printf("Scanning I2C bus on SDA=GP%u SCL=GP%u...\n", SDA_PIN, SCL_PIN);
+
+    int found = 0;
+    for (uint8_t addr = 0x08; addr <= 0x77; addr++) {
+        uint8_t dummy;
+        int ret = i2c_read_blocking(i2c, addr, &dummy, 1, false);
+        if (ret >= 0) {
+            printf("I2C device found at 0x%02X\n", addr);
+            found++;
+        }
+    }
+
+    if (!found) {
+        printf("No I2C devices found.\n");
+    }
+}
+
+static bool try_begin(i2c_inst_t *i2c, uint8_t addr) {
+    printf("Trying BNO08x at 0x%02X...\n", addr);
+    return IMU.begin(addr, i2c);
+}
+
 int main() {
-    // Initialize USB stdio
     stdio_init_all();
-
-    // Allow time for USB enumeration
     sleep_ms(2000);
-    printf("IMU human-readable output started\n");
 
-    // Initialize I2C (i2c0: default GP4=SDA, GP5=SCL)
-    i2c_inst_t* i2c_port0;
-    initI2C(i2c_port0, false);
+    // Use I2C0 on GP16/GP17
+    i2c_inst_t *i2c_port = i2c0;
+    i2c_init(i2c_port, 400 * 1000);  // 400 kHz
 
-    const uint8_t BNO08X_ADDR = 0x4A; // change to 0x4B if needed
+    gpio_set_function(SDA_PIN, GPIO_FUNC_I2C);
+    gpio_set_function(SCL_PIN, GPIO_FUNC_I2C);
+    gpio_pull_up(SDA_PIN);
+    gpio_pull_up(SCL_PIN);
 
-    // Wait until IMU is ready
-    while (!IMU.begin(BNO08X_ADDR, i2c_port0)) {
+    i2c_scan(i2c_port);
+
+    // Try both common BNO08x I2C addresses
+    while (true) {
+        if (try_begin(i2c_port, 0x4A) || try_begin(i2c_port, 0x4B)) {
+            printf("BNO08x detected!\n");
+            break;
+        }
         printf("Waiting for BNO08x...\n");
         sleep_ms(1000);
     }
 
-    printf("BNO08x detected — starting live output\n");
-
-    // Enable fused orientation output
     IMU.enableRotationVector();
 
-    // Main loop: read fused rotation vector and print labeled degrees
     while (true) {
-        if (IMU.getSensorEvent()) {
-            if (IMU.getSensorEventID() == SENSOR_REPORTID_ROTATION_VECTOR) {
+        if (IMU.getSensorEvent() &&
+            IMU.getSensorEventID() == SENSOR_REPORTID_ROTATION_VECTOR) {
 
-                float yaw_rad   = IMU.getYaw();
-                float pitch_rad = IMU.getPitch();
-                float roll_rad  = IMU.getRoll();
+            float yaw   = IMU.getYaw()   * 180.0f / M_PI;
+            float pitch = IMU.getPitch() * 180.0f / M_PI;
+            float roll  = IMU.getRoll()  * 180.0f / M_PI;
 
-                float phi_deg   = yaw_rad   * 180.0f / M_PI; // phi = yaw
-                float theta_deg = pitch_rad * 180.0f / M_PI; // theta = pitch
-                float psi_deg   = roll_rad  * 180.0f / M_PI; // psi = roll
+            if (yaw < 0) yaw += 360.0f;
 
-                // Map yaw (phi) into 0..360 degrees
-                if (phi_deg < 0) phi_deg += 360.0f;
-
-                // Print human-readable labeled line
-                printf(
-                    "phi: %7.2f° (yaw)   "
-                    "theta: %7.2f° (pitch)   "
-                    "psi: %7.2f° (roll)\n",
-                    phi_deg, theta_deg, psi_deg
-                );
-            }
+            // Human-readable columns
+            printf("Yaw: %7.2f°  Pitch: %7.2f°  Roll: %7.2f°\n", yaw, pitch, roll);
         }
-        sleep_ms(200); // ~5 Hz (easy to read)
+        sleep_ms(50);
     }
-
-    return 0;
 }
 

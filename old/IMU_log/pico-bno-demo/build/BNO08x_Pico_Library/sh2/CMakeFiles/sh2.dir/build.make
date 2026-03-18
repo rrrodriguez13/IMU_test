@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo
+CMAKE_SOURCE_DIR = /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build
+CMAKE_BINARY_DIR = /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build
 
 # Include any dependencies generated for this target.
 include BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/depend.make
@@ -70,60 +70,60 @@ include BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/progress.make
 include BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/flags.make
 
 BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2.c.o: BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/flags.make
-BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2.c.o: /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/sh2.c
+BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2.c.o: /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/sh2.c
 BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2.c.o: BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2.c.o"
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build/BNO08x_Pico_Library/sh2 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2.c.o -MF CMakeFiles/sh2.dir/src/sh2.c.o.d -o CMakeFiles/sh2.dir/src/sh2.c.o -c /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/sh2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2.c.o"
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build/BNO08x_Pico_Library/sh2 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2.c.o -MF CMakeFiles/sh2.dir/src/sh2.c.o.d -o CMakeFiles/sh2.dir/src/sh2.c.o -c /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/sh2.c
 
 BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sh2.dir/src/sh2.c.i"
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build/BNO08x_Pico_Library/sh2 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/sh2.c > CMakeFiles/sh2.dir/src/sh2.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build/BNO08x_Pico_Library/sh2 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/sh2.c > CMakeFiles/sh2.dir/src/sh2.c.i
 
 BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sh2.dir/src/sh2.c.s"
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build/BNO08x_Pico_Library/sh2 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/sh2.c -o CMakeFiles/sh2.dir/src/sh2.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build/BNO08x_Pico_Library/sh2 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/sh2.c -o CMakeFiles/sh2.dir/src/sh2.c.s
 
 BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/shtp.c.o: BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/flags.make
-BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/shtp.c.o: /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/shtp.c
+BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/shtp.c.o: /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/shtp.c
 BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/shtp.c.o: BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/shtp.c.o"
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build/BNO08x_Pico_Library/sh2 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/shtp.c.o -MF CMakeFiles/sh2.dir/src/shtp.c.o.d -o CMakeFiles/sh2.dir/src/shtp.c.o -c /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/shtp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/shtp.c.o"
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build/BNO08x_Pico_Library/sh2 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/shtp.c.o -MF CMakeFiles/sh2.dir/src/shtp.c.o.d -o CMakeFiles/sh2.dir/src/shtp.c.o -c /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/shtp.c
 
 BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/shtp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sh2.dir/src/shtp.c.i"
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build/BNO08x_Pico_Library/sh2 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/shtp.c > CMakeFiles/sh2.dir/src/shtp.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build/BNO08x_Pico_Library/sh2 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/shtp.c > CMakeFiles/sh2.dir/src/shtp.c.i
 
 BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/shtp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sh2.dir/src/shtp.c.s"
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build/BNO08x_Pico_Library/sh2 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/shtp.c -o CMakeFiles/sh2.dir/src/shtp.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build/BNO08x_Pico_Library/sh2 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/shtp.c -o CMakeFiles/sh2.dir/src/shtp.c.s
 
 BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_util.c.o: BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/flags.make
-BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_util.c.o: /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/sh2_util.c
+BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_util.c.o: /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/sh2_util.c
 BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_util.c.o: BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_util.c.o"
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build/BNO08x_Pico_Library/sh2 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_util.c.o -MF CMakeFiles/sh2.dir/src/sh2_util.c.o.d -o CMakeFiles/sh2.dir/src/sh2_util.c.o -c /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/sh2_util.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_util.c.o"
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build/BNO08x_Pico_Library/sh2 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_util.c.o -MF CMakeFiles/sh2.dir/src/sh2_util.c.o.d -o CMakeFiles/sh2.dir/src/sh2_util.c.o -c /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/sh2_util.c
 
 BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_util.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sh2.dir/src/sh2_util.c.i"
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build/BNO08x_Pico_Library/sh2 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/sh2_util.c > CMakeFiles/sh2.dir/src/sh2_util.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build/BNO08x_Pico_Library/sh2 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/sh2_util.c > CMakeFiles/sh2.dir/src/sh2_util.c.i
 
 BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_util.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sh2.dir/src/sh2_util.c.s"
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build/BNO08x_Pico_Library/sh2 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/sh2_util.c -o CMakeFiles/sh2.dir/src/sh2_util.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build/BNO08x_Pico_Library/sh2 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/sh2_util.c -o CMakeFiles/sh2.dir/src/sh2_util.c.s
 
 BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_SensorValue.c.o: BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/flags.make
-BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_SensorValue.c.o: /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/sh2_SensorValue.c
+BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_SensorValue.c.o: /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/sh2_SensorValue.c
 BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_SensorValue.c.o: BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_SensorValue.c.o"
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build/BNO08x_Pico_Library/sh2 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_SensorValue.c.o -MF CMakeFiles/sh2.dir/src/sh2_SensorValue.c.o.d -o CMakeFiles/sh2.dir/src/sh2_SensorValue.c.o -c /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/sh2_SensorValue.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_SensorValue.c.o"
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build/BNO08x_Pico_Library/sh2 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_SensorValue.c.o -MF CMakeFiles/sh2.dir/src/sh2_SensorValue.c.o.d -o CMakeFiles/sh2.dir/src/sh2_SensorValue.c.o -c /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/sh2_SensorValue.c
 
 BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_SensorValue.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sh2.dir/src/sh2_SensorValue.c.i"
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build/BNO08x_Pico_Library/sh2 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/sh2_SensorValue.c > CMakeFiles/sh2.dir/src/sh2_SensorValue.c.i
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build/BNO08x_Pico_Library/sh2 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/sh2_SensorValue.c > CMakeFiles/sh2.dir/src/sh2_SensorValue.c.i
 
 BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_SensorValue.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sh2.dir/src/sh2_SensorValue.c.s"
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build/BNO08x_Pico_Library/sh2 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/sh2_SensorValue.c -o CMakeFiles/sh2.dir/src/sh2_SensorValue.c.s
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build/BNO08x_Pico_Library/sh2 && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/sh2_SensorValue.c -o CMakeFiles/sh2.dir/src/sh2_SensorValue.c.s
 
 # Object files for target sh2
 sh2_OBJECTS = \
@@ -141,19 +141,19 @@ BNO08x_Pico_Library/sh2/libsh2.a: BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src
 BNO08x_Pico_Library/sh2/libsh2.a: BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_SensorValue.c.o
 BNO08x_Pico_Library/sh2/libsh2.a: BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/build.make
 BNO08x_Pico_Library/sh2/libsh2.a: BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C static library libsh2.a"
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build/BNO08x_Pico_Library/sh2 && $(CMAKE_COMMAND) -P CMakeFiles/sh2.dir/cmake_clean_target.cmake
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build/BNO08x_Pico_Library/sh2 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sh2.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C static library libsh2.a"
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build/BNO08x_Pico_Library/sh2 && $(CMAKE_COMMAND) -P CMakeFiles/sh2.dir/cmake_clean_target.cmake
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build/BNO08x_Pico_Library/sh2 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sh2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/build: BNO08x_Pico_Library/sh2/libsh2.a
 .PHONY : BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/build
 
 BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/clean:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build/BNO08x_Pico_Library/sh2 && $(CMAKE_COMMAND) -P CMakeFiles/sh2.dir/cmake_clean.cmake
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build/BNO08x_Pico_Library/sh2 && $(CMAKE_COMMAND) -P CMakeFiles/sh2.dir/cmake_clean.cmake
 .PHONY : BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/clean
 
 BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/depend:
-	cd /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2 /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build/BNO08x_Pico_Library/sh2 /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/build/BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2 /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build/BNO08x_Pico_Library/sh2 /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/build/BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/depend
 

@@ -4,7 +4,7 @@
 
 // based on PICO_CONFIG_HEADER_FILES:
 
-#include "/home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/pico-sdk/src/boards/include/boards/pico2.h"
-#include "/home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h"
+#include "/home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/pico-sdk/src/boards/include/boards/pico2.h"
+#include "/home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h"
 
 // based on PICO_RP2350_ARM_S_CONFIG_HEADER_FILES:

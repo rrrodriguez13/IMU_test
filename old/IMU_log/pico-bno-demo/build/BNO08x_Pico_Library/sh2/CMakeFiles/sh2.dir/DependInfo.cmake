@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/sh2.c" "BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2.c.o" "gcc" "BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2.c.o.d"
-  "/home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/sh2_SensorValue.c" "BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_SensorValue.c.o" "gcc" "BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_SensorValue.c.o.d"
-  "/home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/sh2_util.c" "BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_util.c.o" "gcc" "BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_util.c.o.d"
-  "/home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/shtp.c" "BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/shtp.c.o" "gcc" "BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/shtp.c.o.d"
+  "/home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/sh2.c" "BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2.c.o" "gcc" "BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2.c.o.d"
+  "/home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/sh2_SensorValue.c" "BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_SensorValue.c.o" "gcc" "BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_SensorValue.c.o.d"
+  "/home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/sh2_util.c" "BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_util.c.o" "gcc" "BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2_util.c.o.d"
+  "/home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/shtp.c" "BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/shtp.c.o" "gcc" "BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/shtp.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

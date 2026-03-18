@@ -1,12 +1,12 @@
 BNO08x_Pico_Library/sh2/CMakeFiles/sh2.dir/src/sh2.c.o: \
- /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/sh2.c \
- /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/include/sh2.h \
+ /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/src/sh2.c \
+ /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/include/sh2.h \
  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h \
  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h \
- /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/include/sh2_hal.h \
- /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/include/sh2_err.h \
- /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/include/shtp.h \
- /home/an0mie/Projects/IMU/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/include/sh2_util.h \
+ /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/include/sh2_hal.h \
+ /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/include/sh2_err.h \
+ /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/include/shtp.h \
+ /home/an0mie/Projects/IMU_test/IMU_log/pico-bno-demo/BNO08x_Pico_Library/sh2/include/sh2_util.h \
  /usr/include/newlib/string.h /usr/include/newlib/_ansi.h \
  /usr/include/newlib/newlib.h /usr/include/newlib/_newlib_version.h \
  /usr/include/newlib/sys/config.h /usr/include/newlib/machine/ieeefp.h \
