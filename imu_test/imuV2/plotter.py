@@ -166,7 +166,7 @@ def main():
                 data = load_csv(path)
                 x = data[args.x]
                 fig, ax = plt.subplots()
-                ax.set_title(f"{args.title} — {os.path.basename(path)}")
+                ax.set_title(f"{args.title} -- {os.path.basename(path)}")
                 ax.set_xlabel(args.x)
                 ax.set_ylabel("value")
                 ax.grid(True)
