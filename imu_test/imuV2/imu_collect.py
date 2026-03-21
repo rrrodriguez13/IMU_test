@@ -52,16 +52,16 @@ class ImuReader(threading.Thread):
         self.idx = idx
         self.latest = None
         self.error = None
-        self._stop = threading.Event()
+        self._stop_event = threading.Event()
 
     def stop(self):
-        self._stop.set()
+        self._stop_event.set()
 
     def run(self):
         try:
             with serial.Serial(self.port, self.baud, timeout=0.1) as ser:
                 ser.reset_input_buffer()
-                while not self._stop.is_set():
+                while not self._stop_event.is_set():
                     pkt = read_packet(ser)
                     if pkt is not None:
                         self.latest = pkt
@@ -95,10 +95,10 @@ class LoggingThread(threading.Thread):
         self.hz = hz
         self.rows_written = 0
         self.t0 = None
-        self._stop = threading.Event()
+        self._stop_event = threading.Event()
 
     def stop(self):
-        self._stop.set()
+        self._stop_event.set()
 
     def run(self):
         n = len(self.readers)
@@ -112,7 +112,7 @@ class LoggingThread(threading.Thread):
             writer.writerow(build_header(n))
             f.flush()
 
-            while not self._stop.is_set():
+            while not self._stop_event.is_set():
                 now = time.time()
                 if (now - last_log) < period:
                     time.sleep(0.0005)
@@ -120,6 +120,8 @@ class LoggingThread(threading.Thread):
                 last_log = now
 
                 samples = [r.latest for r in self.readers]
+                if any(s is None for s in samples):
+                    continue
                 t = now - self.t0
 
                 row = [f"{now:.6f}", f"{t:.6f}"]
@@ -253,6 +255,9 @@ def main():
     active_ports = []
     for r in probes:
         r.stop()
+        r.join(timeout=2.0)
+        if r.is_alive():
+            print(f"  warn: {r.port} thread did not exit cleanly")
         if r.error:
             print(f"  skip {r.port}: {r.error}")
         elif r.latest is None:
@@ -264,6 +269,8 @@ def main():
     if not active_ports:
         print("No IMUs found.")
         return
+
+    time.sleep(0.2)  # allow OS to fully release serial fds before reopening
 
     print(f"\n{len(active_ports)} IMU(s) active")
 
@@ -291,9 +298,9 @@ def main():
     try:
         if not args.no_plot:
             run_plot(readers, active_ports, args.window, args.plot_hz)
-        else:
-            while logger.is_alive():
-                time.sleep(0.5)
+            print("Plot closed. Still logging... (Ctrl-C to stop)")
+        while logger.is_alive():
+            time.sleep(0.5)
     except KeyboardInterrupt:
         pass
     finally:
@@ -307,4 +314,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
