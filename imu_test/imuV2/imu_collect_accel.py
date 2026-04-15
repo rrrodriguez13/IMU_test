@@ -27,7 +27,7 @@ PROBE_SECS = 5.0
 
 
 def find_ports():
-    return sorted(glob.glob("/dev/ttyACM*") + glob.glob("/dev/ttyUSB*")) # usb unnecessary here but whatevs
+    return sorted(glob.glob("/dev/ttyACM*") + glob.glob("/dev/ttyUSB*"))
 
 
 def read_packet(ser):
@@ -138,7 +138,7 @@ class LoggingThread(threading.Thread):
                 if (now - last_print) >= 0.5:
                     last_print = now
                     vals = " | ".join(
-                        f"imu{i} r={s[0]:6.2f} p={s[1]:6.2f} y={s[2]:6.2f}"
+                        f"imu{i} r={s[0]:6.2f} p={s[1]:6.2f} y={s[2]:6.2f} ax={s[3]:7.4f} ay={s[4]:7.4f} az={s[5]:7.4f}"
                         for i, s in enumerate(samples)
                     )
                     print(f"  t={t:7.2f}s  {vals}  [{self.rows_written} rows]",
@@ -162,21 +162,35 @@ def run_plot(readers, active_ports, window_sec, plot_hz):
     ts = deque(maxlen=maxlen)
     bufs = [{"roll": deque(maxlen=maxlen),
              "pitch": deque(maxlen=maxlen),
-             "yaw": deque(maxlen=maxlen)} for _ in range(n)]
+             "yaw": deque(maxlen=maxlen),
+             "ax": deque(maxlen=maxlen),
+             "ay": deque(maxlen=maxlen),
+             "az": deque(maxlen=maxlen)} for _ in range(n)]
 
     plt.ion()
-    fig, axes = plt.subplots(n, 1, sharex=True, figsize=(10, 3 * n), squeeze=False)
-    lines = []
+    fig, axes = plt.subplots(n * 2, 1, sharex=True, figsize=(10, 3 * n * 2), squeeze=False)
+    angle_lines = []
+    accel_lines = []
     for i in range(n):
-        ax = axes[i][0]
-        (lr,) = ax.plot([], [], color="tab:blue", label="roll", lw=1.5)
-        (lp,) = ax.plot([], [], color="tab:orange", label="pitch", lw=1.5)
-        (ly,) = ax.plot([], [], color="tab:green", label="yaw", lw=1.5)
-        lines.append((lr, lp, ly))
-        ax.set_title(f"IMU {i}  ({active_ports[i]})")
-        ax.set_ylabel("Degrees")
-        ax.legend(loc="upper right", fontsize=8)
-        ax.grid(True)
+        ax_ang = axes[i * 2][0]
+        (lr,) = ax_ang.plot([], [], color="tab:blue", label="roll", lw=1.5)
+        (lp,) = ax_ang.plot([], [], color="tab:orange", label="pitch", lw=1.5)
+        (ly,) = ax_ang.plot([], [], color="tab:green", label="yaw", lw=1.5)
+        angle_lines.append((lr, lp, ly))
+        ax_ang.set_title(f"IMU {i}  ({active_ports[i]}) — Angles")
+        ax_ang.set_ylabel("Degrees")
+        ax_ang.legend(loc="upper right", fontsize=8)
+        ax_ang.grid(True)
+
+        ax_acc = axes[i * 2 + 1][0]
+        (lax,) = ax_acc.plot([], [], color="tab:red", label="ax", lw=1.5)
+        (lay,) = ax_acc.plot([], [], color="tab:purple", label="ay", lw=1.5)
+        (laz,) = ax_acc.plot([], [], color="tab:brown", label="az", lw=1.5)
+        accel_lines.append((lax, lay, laz))
+        ax_acc.set_title(f"IMU {i}  ({active_ports[i]}) — Accel")
+        ax_acc.set_ylabel("m/s²")
+        ax_acc.legend(loc="upper right", fontsize=8)
+        ax_acc.grid(True)
     axes[-1][0].set_xlabel("Time (s)")
     fig.tight_layout()
 
@@ -198,26 +212,40 @@ def run_plot(readers, active_ports, window_sec, plot_hz):
 
             t = now - t0
             ts.append(t)
-            for i, (roll, pitch, yaw, *_) in enumerate(samples):
+            for i, (roll, pitch, yaw, ax, ay, az) in enumerate(samples):
                 bufs[i]["roll"].append(roll)
                 bufs[i]["pitch"].append(pitch)
                 bufs[i]["yaw"].append(yaw)
+                bufs[i]["ax"].append(ax)
+                bufs[i]["ay"].append(ay)
+                bufs[i]["az"].append(az)
 
-            for i, (lr, lp, ly) in enumerate(lines):
+            for i, (lr, lp, ly) in enumerate(angle_lines):
                 lr.set_data(ts, bufs[i]["roll"])
                 lp.set_data(ts, bufs[i]["pitch"])
                 ly.set_data(ts, bufs[i]["yaw"])
+
+            for i, (lax, lay, laz) in enumerate(accel_lines):
+                lax.set_data(ts, bufs[i]["ax"])
+                lay.set_data(ts, bufs[i]["ay"])
+                laz.set_data(ts, bufs[i]["az"])
 
             if len(ts) >= 2:
                 xmin = max(0.0, ts[-1] - window_sec)
                 axes[0][0].set_xlim(xmin, ts[-1])
 
             for i in range(n):
-                all_y = list(bufs[i]["roll"]) + list(bufs[i]["pitch"]) + list(bufs[i]["yaw"])
-                if all_y:
-                    ymin, ymax = min(all_y), max(all_y)
+                all_ang = list(bufs[i]["roll"]) + list(bufs[i]["pitch"]) + list(bufs[i]["yaw"])
+                if all_ang:
+                    ymin, ymax = min(all_ang), max(all_ang)
                     pad = max(1.0, 0.1 * (ymax - ymin) if ymax > ymin else 1.0)
-                    axes[i][0].set_ylim(ymin - pad, ymax + pad)
+                    axes[i * 2][0].set_ylim(ymin - pad, ymax + pad)
+
+                all_acc = list(bufs[i]["ax"]) + list(bufs[i]["ay"]) + list(bufs[i]["az"])
+                if all_acc:
+                    ymin, ymax = min(all_acc), max(all_acc)
+                    pad = max(0.1, 0.1 * (ymax - ymin) if ymax > ymin else 0.1)
+                    axes[i * 2 + 1][0].set_ylim(ymin - pad, ymax + pad)
 
             fig.canvas.draw_idle()
             plt.pause(0.01)
@@ -270,7 +298,7 @@ def main():
         print("No IMUs found.")
         return
 
-    time.sleep(0.2)  # allow OS to fully release serial before reopening
+    time.sleep(0.2)  # allow OS to fully release serial fds before reopening
 
     print(f"\n{len(active_ports)} IMU(s) active")
 
