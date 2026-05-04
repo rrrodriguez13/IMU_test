@@ -71,7 +71,18 @@ def get_rpy_cols(columns, imu_idx):
     return roll, pitch, yaw
 
 
-def plot_file_auto(path, x_col, title):
+import numpy as np
+
+ANGLE_SUFFIXES = ("_roll_deg", "_pitch_deg", "_yaw_deg", "roll_deg", "pitch_deg", "yaw_deg")
+
+
+def maybe_unwrap(data, cols):
+    for col in cols:
+        if col and any(col.endswith(s) for s in ANGLE_SUFFIXES):
+            data[col] = np.degrees(np.unwrap(np.radians(data[col])))
+
+
+def plot_file_auto(path, x_col, title, unwrap=False):
     data = load_csv(path)
     cols = list(data.keys())
 
@@ -86,6 +97,9 @@ def plot_file_auto(path, x_col, title):
             imu_indices = [None]  # old single-imu format
         else:
             raise KeyError(f"{path}: no IMU columns found")
+
+    if unwrap:
+        maybe_unwrap(data, [c for c in cols if any(c.endswith(s) for s in ANGLE_SUFFIXES)])
 
     n = len(imu_indices)
     fig, axes = plt.subplots(n, 1, sharex=True, figsize=(10, 3 * n), squeeze=False)
@@ -115,7 +129,7 @@ def plot_file_auto(path, x_col, title):
     fig.tight_layout()
 
 
-def plot_overlay(files, x_col, y_cols, title):
+def plot_overlay(files, x_col, y_cols, title, unwrap=False):
     fig, ax = plt.subplots()
     ax.set_title(title)
     ax.set_xlabel(x_col)
@@ -126,6 +140,8 @@ def plot_overlay(files, x_col, y_cols, title):
         data = load_csv(path)
         if x_col not in data:
             raise KeyError(f"{path}: missing '{x_col}'")
+        if unwrap:
+            maybe_unwrap(data, y_cols)
         x = data[x_col]
         for y in y_cols:
             if y not in data:
@@ -141,6 +157,8 @@ def main():
     ap.add_argument("--x", default="t_rel_s")
     ap.add_argument("--y", default=None, help="comma-separated columns")
     ap.add_argument("--overlay", action="store_true")
+    ap.add_argument("--unwrap", action="store_true",
+                    help="unwrap angle columns so yaw never jumps at ±180° (use for full yaw rotation tests only)")
     ap.add_argument("--title", default="IMU Log")
     args = ap.parse_args()
 
@@ -159,11 +177,13 @@ def main():
             for idx in indices:
                 rc, pc, yc = get_rpy_cols(list(data.keys()), idx)
                 y_cols += [c for c in [rc, pc, yc] if c]
-        plot_overlay(files, args.x, y_cols, args.title)
+        plot_overlay(files, args.x, y_cols, args.title, unwrap=args.unwrap)
     else:
         if y_cols:
             for path in files:
                 data = load_csv(path)
+                if args.unwrap:
+                    maybe_unwrap(data, y_cols)
                 x = data[args.x]
                 fig, ax = plt.subplots()
                 ax.set_title(f"{args.title} -- {os.path.basename(path)}")
@@ -177,7 +197,7 @@ def main():
                 ax.legend(loc="best")
         else:
             for path in files:
-                plot_file_auto(path, args.x, args.title)
+                plot_file_auto(path, args.x, args.title, unwrap=args.unwrap)
 
     plt.show()
 

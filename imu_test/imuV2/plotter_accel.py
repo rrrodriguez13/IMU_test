@@ -14,7 +14,16 @@ import math
 import os
 import sys
 
+import numpy as np
 import matplotlib.pyplot as plt
+
+ANGLE_SUFFIXES = ("_roll_deg", "_pitch_deg", "_yaw_deg")
+
+
+def unwrap_angles(data, cols):
+    for col in cols:
+        if col and any(col.endswith(s) for s in ANGLE_SUFFIXES):
+            data[col] = list(np.degrees(np.unwrap(np.radians(data[col]))))
 
 
 def load_csv(path):
@@ -103,9 +112,11 @@ def accel_subplot(ax, x, data, cols, idx):
     ax.grid(True)
 
 
-def plot_full(path, x_col):
+def plot_full(path, x_col, unwrap=False):
     data = load_csv(path)
     cols = list(data.keys())
+    if unwrap:
+        unwrap_angles(data, cols)
     x = data[x_col]
     idxs = imu_indices(cols)
     n = len(idxs)
@@ -120,9 +131,11 @@ def plot_full(path, x_col):
     fig.tight_layout()
 
 
-def plot_angles(path, x_col):
+def plot_angles(path, x_col, unwrap=False):
     data = load_csv(path)
     cols = list(data.keys())
+    if unwrap:
+        unwrap_angles(data, cols)
     x = data[x_col]
     idxs = imu_indices(cols)
 
@@ -177,6 +190,8 @@ def main():
     ap.add_argument("--angles-only", action="store_true")
     ap.add_argument("--accel-only",  action="store_true")
     ap.add_argument("--overlay-mag", action="store_true")
+    ap.add_argument("--unwrap", action="store_true",
+                    help="unwrap angle columns (use for full rotation tests only)")
     args = ap.parse_args()
 
     paths = []
@@ -194,11 +209,11 @@ def main():
     else:
         for path in paths:
             if args.angles_only:
-                plot_angles(path, args.x)
+                plot_angles(path, args.x, unwrap=args.unwrap)
             elif args.accel_only:
                 plot_accel(path, args.x)
             else:
-                plot_full(path, args.x)
+                plot_full(path, args.x, unwrap=args.unwrap)
 
     plt.show()
 
