@@ -94,7 +94,7 @@ def main():
     )
     ap.add_argument(
         "--unwrap", action="store_true",
-        help="unwrap φ across the ±180° boundary for continuous azimuth",
+        help="unwrap azimuth across the +/-180 deg boundary for continuous azimuth",
     )
     args = ap.parse_args()
 
@@ -104,20 +104,27 @@ def main():
 
     data = load_csv(args.file)
 
-    required = (
-        "imu0_roll_deg", "imu0_pitch_deg", "imu0_yaw_deg",
-        "imu1_roll_deg", "imu1_pitch_deg", "imu1_yaw_deg",
-    )
-    missing = [c for c in required if c not in data]
-    if missing:
-        print(f"error: missing columns {missing} — file needs two IMUs", file=sys.stderr)
-        sys.exit(1)
-
-    M0 = euler_to_matrix(*args.m0)
-    M1 = euler_to_matrix(*args.m1)
-
     t = data["t_rel_s"]
-    theta, phi = recover_angles(data, M0, M1)
+
+    # New-format files (from imu_collect_twoaxis.py) already have elevation and
+    # azimuth pre-computed, so just read them directly.
+    # Old-format files have raw Euler angles and need to go through recover_angles().
+    if "elevation_deg" in data and "azimuth_deg" in data:
+        theta = data["elevation_deg"]
+        phi = data["azimuth_deg"]
+    else:
+        required = (
+            "imu0_roll_deg", "imu0_pitch_deg", "imu0_yaw_deg",
+            "imu1_roll_deg", "imu1_pitch_deg", "imu1_yaw_deg",
+        )
+        missing = [c for c in required if c not in data]
+        if missing:
+            print(f"error: missing columns {missing} — file needs two IMUs", file=sys.stderr)
+            sys.exit(1)
+
+        M0 = euler_to_matrix(*args.m0)
+        M1 = euler_to_matrix(*args.m1)
+        theta, phi = recover_angles(data, M0, M1)
 
     if args.unwrap:
         phi = np.degrees(np.unwrap(np.radians(phi)))
@@ -126,18 +133,18 @@ def main():
         2, 1, sharex=True, figsize=(11, 6), facecolor="white"
     )
     fig.suptitle(
-        f"Recovered θ / φ  —  {os.path.basename(args.file)}",
+        f"Recovered Elevation / Azimuth  -  {os.path.basename(args.file)}",
         fontsize=12, fontweight="bold",
     )
 
     ax_t.plot(t, theta, color="#e07b00", lw=1.5)
-    ax_t.set_ylabel("Elevation θ (°)", fontsize=9)
+    ax_t.set_ylabel("Elevation (deg)", fontsize=9)
     ax_t.axhline(0, color="#cccccc", lw=0.8, zorder=0)
     ax_t.grid(True, color="#eeeeee")
     ax_t.set_facecolor("white")
 
     ax_p.plot(t, phi, color="#2ca02c", lw=1.5)
-    ax_p.set_ylabel("Azimuth φ (°)", fontsize=9)
+    ax_p.set_ylabel("Azimuth (deg)", fontsize=9)
     ax_p.set_xlabel("Time (s)", fontsize=9)
     ax_p.axhline(0, color="#cccccc", lw=0.8, zorder=0)
     ax_p.grid(True, color="#eeeeee")
