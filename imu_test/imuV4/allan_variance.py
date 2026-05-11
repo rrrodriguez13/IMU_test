@@ -56,7 +56,7 @@ LABEL = {
 
 # ── CSV loader ────────────────────────────────────────────────────────────────
 
-def load_csv(path):
+def load_csv(path, every=1):
     data = {}
     with open(path, "r", encoding="utf-8", errors="replace") as f:
         header = f.readline().strip().split(",")
@@ -64,7 +64,9 @@ def load_csv(path):
             raise ValueError(f"{path}: bad header")
         for col in header:
             data[col.strip()] = []
-        for line in f:
+        for i, line in enumerate(f):
+            if i % every != 0:
+                continue
             line = line.strip()
             if not line:
                 continue
@@ -231,13 +233,15 @@ def main():
     ap.add_argument("file", help="path to the imuV4 CSV log")
     ap.add_argument("--cols", default=None,
                     help="comma-separated columns (default: elevation_deg, azimuth_deg)")
+    ap.add_argument("--every", type=int, default=1, metavar="N",
+                    help="use every Nth row (e.g. --every 10 for large files; increases min tau by N)")
     args = ap.parse_args()
 
     if not os.path.exists(args.file):
         print(f"error: {args.file} not found", file=sys.stderr)
         sys.exit(1)
 
-    data = load_csv(args.file)
+    data = load_csv(args.file, every=args.every)
     columns = list(data.keys())
 
     if "t_rel_s" not in data:
