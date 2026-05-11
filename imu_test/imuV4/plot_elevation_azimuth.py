@@ -100,6 +100,8 @@ def main():
     )
     ap.add_argument("--every", type=int, default=1, metavar="N",
                     help="plot every Nth sample (e.g. --every 100 for large files)")
+    ap.add_argument("--no-yaw", action="store_true",
+                    help="zero out yaw for both IMUs before recovering elevation/azimuth")
     args = ap.parse_args()
 
     if not os.path.exists(args.file):
@@ -126,6 +128,10 @@ def main():
             print(f"error: missing columns {missing} — file needs two IMUs", file=sys.stderr)
             sys.exit(1)
 
+        if args.no_yaw:
+            data["imu0_yaw_deg"] = np.zeros_like(data["imu0_yaw_deg"])
+            data["imu1_yaw_deg"] = np.zeros_like(data["imu1_yaw_deg"])
+
         M0 = euler_to_matrix(*args.m0)
         M1 = euler_to_matrix(*args.m1)
         theta, phi = recover_angles(data, M0, M1)
@@ -136,8 +142,9 @@ def main():
     fig, (ax_t, ax_p) = plt.subplots(
         2, 1, sharex=True, figsize=(11, 6), facecolor="white"
     )
+    yaw_note = "  [yaw excluded]" if args.no_yaw else ""
     fig.suptitle(
-        f"Recovered Elevation / Azimuth  -  {os.path.basename(args.file)}",
+        f"Recovered Elevation / Azimuth{yaw_note}  -  {os.path.basename(args.file)}",
         fontsize=12, fontweight="bold",
     )
 
