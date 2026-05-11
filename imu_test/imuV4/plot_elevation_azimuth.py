@@ -35,13 +35,15 @@ def euler_to_matrix(yaw_deg, pitch_deg, roll_deg):
     return R
 
 
-def load_csv(path):
+def load_csv(path, every=1):
     data = {}
     with open(path, "r", encoding="utf-8", errors="replace") as f:
         header = f.readline().strip().split(",")
         for col in header:
             data[col.strip()] = []
-        for line in f:
+        for i, line in enumerate(f):
+            if i % every != 0:
+                continue
             line = line.strip()
             if not line:
                 continue
@@ -96,13 +98,15 @@ def main():
         "--unwrap", action="store_true",
         help="unwrap azimuth across the +/-180 deg boundary for continuous azimuth",
     )
+    ap.add_argument("--every", type=int, default=1, metavar="N",
+                    help="plot every Nth sample (e.g. --every 100 for large files)")
     args = ap.parse_args()
 
     if not os.path.exists(args.file):
         print(f"error: {args.file} not found", file=sys.stderr)
         sys.exit(1)
 
-    data = load_csv(args.file)
+    data = load_csv(args.file, every=args.every)
 
     t = data["t_rel_s"]
 
