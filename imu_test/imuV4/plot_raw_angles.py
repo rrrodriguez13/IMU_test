@@ -22,7 +22,7 @@ RPY_COLORS = {"roll": "tab:blue", "pitch": "tab:orange", "yaw": "tab:green"}
 ANGLE_SUFFIXES = ("_roll_deg", "_pitch_deg", "_yaw_deg", "roll_deg", "pitch_deg", "yaw_deg")
 
 
-def load_csv(path):
+def load_csv(path, every=1):
     data = {}
     with open(path, "r", encoding="utf-8", errors="replace") as f:
         header = f.readline().strip().split(",")
@@ -30,7 +30,9 @@ def load_csv(path):
             raise ValueError(f"{path}: bad header")
         for col in header:
             data[col.strip()] = []
-        for line in f:
+        for i, line in enumerate(f):
+            if i % every != 0:
+                continue
             line = line.strip()
             if not line:
                 continue
@@ -83,8 +85,8 @@ def maybe_unwrap(data, cols):
             data[col] = np.degrees(np.unwrap(np.radians(data[col])))
 
 
-def plot_file_auto(path, x_col, title, unwrap=False):
-    data = load_csv(path)
+def plot_file_auto(path, x_col, title, unwrap=False, every=1):
+    data = load_csv(path, every=every)
     cols = list(data.keys())
 
     if x_col not in data:
@@ -125,7 +127,7 @@ def plot_file_auto(path, x_col, title, unwrap=False):
     fig.tight_layout()
 
 
-def plot_overlay(files, x_col, y_cols, title, unwrap=False):
+def plot_overlay(files, x_col, y_cols, title, unwrap=False, every=1):
     fig, ax = plt.subplots()
     ax.set_title(title)
     ax.set_xlabel(x_col)
@@ -133,7 +135,7 @@ def plot_overlay(files, x_col, y_cols, title, unwrap=False):
     ax.grid(True)
 
     for path in files:
-        data = load_csv(path)
+        data = load_csv(path, every=every)
         if x_col not in data:
             raise KeyError(f"{path}: missing '{x_col}'")
         if unwrap:
@@ -157,6 +159,8 @@ def main():
     ap.add_argument("--unwrap", action="store_true",
                     help="unwrap angle columns so yaw never jumps at +/-180 deg")
     ap.add_argument("--title", default="IMU Raw Angles")
+    ap.add_argument("--every", type=int, default=1, metavar="N",
+                    help="plot every Nth sample (e.g. --every 100 for large files)")
     args = ap.parse_args()
 
     files = [f for f in expand_inputs(args.files) if os.path.exists(f)]
@@ -169,17 +173,17 @@ def main():
     if args.overlay:
         if not y_cols:
             # Default overlay: roll/pitch/yaw for all IMUs in the first file
-            data = load_csv(files[0])
+            data = load_csv(files[0], every=args.every)
             indices = detect_imu_indices(list(data.keys()))
             y_cols = []
             for idx in indices:
                 rc, pc, yc = get_rpy_cols(list(data.keys()), idx)
                 y_cols += [c for c in [rc, pc, yc] if c]
-        plot_overlay(files, args.x, y_cols, args.title, unwrap=args.unwrap)
+        plot_overlay(files, args.x, y_cols, args.title, unwrap=args.unwrap, every=args.every)
     else:
         if y_cols:
             for path in files:
-                data = load_csv(path)
+                data = load_csv(path, every=args.every)
                 if args.unwrap:
                     maybe_unwrap(data, y_cols)
                 x = data[args.x]
@@ -195,7 +199,7 @@ def main():
                 ax.legend(loc="best")
         else:
             for path in files:
-                plot_file_auto(path, args.x, args.title, unwrap=args.unwrap)
+                plot_file_auto(path, args.x, args.title, unwrap=args.unwrap, every=args.every)
 
     plt.show()
 
